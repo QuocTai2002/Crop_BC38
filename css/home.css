@@ -228,7 +228,7 @@ header {
 
 /* SERVICE */
 .service {
-    padding: 100px 0;
+  padding: 100px 0;
 }
 .service .title_small {
   text-align: center;
@@ -275,188 +275,297 @@ header {
 }
 
 /* OUR GALLERY */
-.gallery{
-    background-color: #f7f7f7;
-    padding: 100px 0;
+.gallery {
+  background-color: #f7f7f7;
+  padding-top: 100px;
 }
-.gallery .title_small{
-    text-align: center;
+.gallery .title_small {
+  text-align: center;
 }
-.gallery .gallery_content{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap:30px;
+.gallery .gallery_content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
 }
-.gallery .company-logos{
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
-    padding: 50px 0;
-    border-top: #151421 1px;
+.gallery .company-logos {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0;
+  padding: 50px 0;
+  border-top: #151421 1px;
 }
-.gallery .company-logos .company{
-    max-width: 15%;
-    height: auto;
-    padding: 0 20px;
+.gallery .company-logos .company {
+  max-width: 15%;
+  height: auto;
+  padding: 0 20px;
 }
-.gallery .company-logos .company img{
-    width: 100%;
-
+.gallery .company-logos .company img {
+  width: 100%;
 }
 
 /* SUCCESS */
-.success{
-margin: 100px 0;
+.success {
+  margin: 100px 0;
 }
-.success .success_content{
-    display: flex;
+.success .success_content {
+  display: flex;
 }
-.success .success_content .content_left img{
-    border-radius: 10px;
+.success .success_content .content_left img {
+  border-radius: 10px;
 }
-.success .success_content .content_right{
-    padding-left: 30px;
+.success .success_content .content_right {
+  padding-left: 30px;
 }
-.progress-tittle{
-    font-weight: 400;
+.progress-tittle {
+  font-weight: 400;
 }
-.progress-info{
-    position:relative;
+.progress-info {
+  position: relative;
 }
-.progress{
-    background-color: #fff;
-    align-items: center;
-   
+.progress {
+  background-color: #fff;
+  align-items: center;
 }
-.progress-info{
-    margin-bottom: 30px;
+.progress-info {
+  margin-bottom: 30px;
 }
-.progress-info .progress-bar{
-    height: 4px;
-    border-radius: 10px;
+.progress-info .progress-bar {
+  height: 4px;
+  border-radius: 10px;
 }
-.progress-bar.gradient-1{
-    color: #61fded;
-    background-image: linear-gradient(-224deg, #0d8abc, #61fded);
-    background-size: cover;
+.progress-bar.gradient-1 {
+  color: #61fded;
+  background-image: linear-gradient(-224deg, #0d8abc, #61fded);
+  background-size: cover;
 }
 
 .progress-bar.gradient-1::before {
-    content: "";
-    position: absolute;
-    right: 19%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
-    height: 28px;
-    width: 28px;
-    border: 1px solid;
-    opacity: 0.3;
-    
+  content: "";
+  position: absolute;
+  right: 19%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  height: 28px;
+  width: 28px;
+  border: 1px solid;
+  opacity: 0.3;
 }
-.progress-bar.gradient-1::after{   
-    height: 13px;
-    width: 13px;
-    border: 3px solid;
-    content: "";
-    position: absolute;
-    right: 19%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
-;
+.progress-bar.gradient-1::after {
+  height: 13px;
+  width: 13px;
+  border: 3px solid;
+  content: "";
+  position: absolute;
+  right: 19%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
 }
-.progress-bar.gradient-2{
-    color: #eece90;
-    background-color: #d45529;
-    background-image: linear-gradient(-224deg, #d45529, #eece90);
-    background-size: cover;
+.progress-bar.gradient-2 {
+  color: #eece90;
+  background-color: #d45529;
+  background-image: linear-gradient(-224deg, #d45529, #eece90);
+  background-size: cover;
 }
-.progress-bar.gradient-2::before{
-    content: "";
-    position: absolute;
-    right: 4%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
-    height: 28px;
-    width: 28px;
-    border: 1px solid;
-    opacity: 0.3;
+.progress-bar.gradient-2::before {
+  content: "";
+  position: absolute;
+  right: 4%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  height: 28px;
+  width: 28px;
+  border: 1px solid;
+  opacity: 0.3;
 }
-.progress-bar.gradient-2::after{
-    height: 13px;
-    width: 13px;
-    border: 3px solid;
-    content: "";
-    position: absolute;
-    right: 4%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
+.progress-bar.gradient-2::after {
+  height: 13px;
+  width: 13px;
+  border: 3px solid;
+  content: "";
+  position: absolute;
+  right: 4%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
 }
-.progress-bar.gradient-3{
-    color: #5c51ff;
-    background-color: #f646a9;
-    background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
-    background-size: cover;
+.progress-bar.gradient-3 {
+  color: #5c51ff;
+  background-color: #f646a9;
+  background-image: linear-gradient(-224deg, #f646a9, #5c51ff);
+  background-size: cover;
 }
-.progress-bar.gradient-3::before{
-    content: "";
-    position: absolute;
-    right: 39%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
-    height: 28px;
-    width: 28px;
-    border: 1px solid;
-    opacity: 0.3;
+.progress-bar.gradient-3::before {
+  content: "";
+  position: absolute;
+  right: 39%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  height: 28px;
+  width: 28px;
+  border: 1px solid;
+  opacity: 0.3;
 }
-.progress-bar.gradient-3::after{
-    height: 13px;
-    width: 13px;
-    border: 3px solid;
-    content: "";
-    position: absolute;
-    right: 39%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
+.progress-bar.gradient-3::after {
+  height: 13px;
+  width: 13px;
+  border: 3px solid;
+  content: "";
+  position: absolute;
+  right: 39%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
 }
-.progress-bar.gradient-4{
-    color: #e5529a;
-    background-color: #e77654;
-    background-image: linear-gradient(-224deg, #e77654, #e5529a);
-    background-size: cover;
+.progress-bar.gradient-4 {
+  color: #e5529a;
+  background-color: #e77654;
+  background-image: linear-gradient(-224deg, #e77654, #e5529a);
+  background-size: cover;
 }
-.progress-bar.gradient-4::before{
-    content: "";
-    position: absolute;
-    right: 14%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
-    height: 28px;
-    width: 28px;
-    border: 1px solid;
-    opacity: 0.3;
+.progress-bar.gradient-4::before {
+  content: "";
+  position: absolute;
+  right: 14%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
+  height: 28px;
+  width: 28px;
+  border: 1px solid;
+  opacity: 0.3;
 }
-.progress-bar.gradient-4::after{
-    height: 13px;
-    width: 13px;
-    border: 3px solid;
-    content: "";
-    position: absolute;
-    right: 14%;
-    top: 80%;
-    border-radius: 50%;
-    transform: translate(50%, -50%);
+.progress-bar.gradient-4::after {
+  height: 13px;
+  width: 13px;
+  border: 3px solid;
+  content: "";
+  position: absolute;
+  right: 14%;
+  top: 80%;
+  border-radius: 50%;
+  transform: translate(50%, -50%);
 }
 
 /* Testimonials */
-.testimonial .title_small{
-    text-align: center;
+.testimonial .title_small {
+  text-align: center;
+}
+
+/* New */
+.new .title_small {
+  text-align: center;
+}
+.new .row {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+/* .new .item .card {
+  display: flex;
+} */
+.new {
+  background-color: #fcfcfc;
+  margin: 100px 0;
+  padding: 50px 0;
+}
+.new .item .card {
+  border: none;
+  border-radius: 6px;
+}
+.new .item .card .card_header img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px 6px 0 0;
+}
+.new .item .card .card_body {
+  flex: 1 1 auto;
+  min-height: 1px;
+  padding: 1.25rem;
+}
+.new .item .card .card_body .review a {
+  font-size: 17px;
+  font-weight: 400;
+  color: #999;
+  margin: 0;
+}
+.new .item .card .card_body a {
+  display: block;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 10px;
+}
+.new .item .card .card_footer {
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-color);
+  border-top: 1px solid rgb(153, 153, 153, 0.2);
+}
+
+.new .item .card .card_footer .author {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-gap: 10px;
+}
+.new .item .card .card_footer .author .meta span {
+  color: #999;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.new .item .card .card_footer .author .meta a {
+  color: var(--heading-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.new .item .card .card_footer .author .date {
+  color: #999;
+  font-size: 15px;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.letter {
+  background-image: url(../images/map.png);
+  background-color: #151421;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 50px;
+  border-bottom:1px solid rgb(153, 153, 153, 0.2); ;
+}
+.letter .bottom-info{
+  max-width: 700px;
+    margin: 0 auto;
+}
+.letter .header-section{
+  color: #fff;
+}
+.letter .bottom-info form{
+  margin-top: 25px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 50px 1fr auto;
+    max-width: 550px;
+    margin: auto;
+    height: 60px;
+}
+.letter .bottom-info form .input-group-text{
+  border-radius: 0.375rem 0 0 0.375rem;
+}
+.letter .bottom-info form button{
+  border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 0 25px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #00a63f;
+    border-color: #00a63f;
 }
 .shape {
   position: absolute;
@@ -477,8 +586,7 @@ margin: 100px 0;
   width: 100%;
   height: 80px;
   bottom: 0%;
-  left: 0;
-  z-index: 20;
+  left: 0;  
 }
 footer {
   background-color: #151421;
