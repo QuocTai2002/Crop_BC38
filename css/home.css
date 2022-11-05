@@ -779,3 +779,56 @@ header.style_header .nav-item .nav-link.active{
   color: #009f4d;
   opacity: .9;
 }
+footer .sidebar button.btn{
+ position: fixed;
+  right: 20px;
+  top: 23%;
+  z-index: 99;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  color: #e6ebff;
+  background-color:#0D1326 ;
+  opacity: .5;
+}
+footer .sidebar button.btn:hover{
+  color: #e6ebff;
+  background-color:#0D1326 ;
+  opacity: .5;
+  
+}
+footer .sidebar .offcanvas-end{
+  top: 21%;
+  right: 0;
+  bottom: 35%;
+border-radius: 9px 0 0 9px;
+  position: fixed;
+  z-index: 98;
+  width: 100px;
+  background-color: #0D1326;
+}
+footer .sidebar .offcanvas-header ul {
+  list-style: none;
+  padding: 0;
+  
+  margin-top:  60px;
+  text-align: center;
+  border-top: #e6ebff solid 1px;
+  opacity: .6;
+}
+footer .sidebar .offcanvas-header ul li a i{
+  display: block;
+}
+footer .sidebar .offcanvas-header ul li a {
+  color:#e6ebff  ;
+  opacity: .6;
+  transition: all .2s;
+}
+footer .sidebar .offcanvas-header ul li a:hover{
+  opacity: 1;
+  color: white;
+}
+footer .sidebar .offcanvas-header ul li {
+
+  padding-top: 30px;
+}

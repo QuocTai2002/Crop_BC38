@@ -15,3 +15,17 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+var count = 1;
+function sidebar(){
+ 
+  if (count == 0){
+    var a =  '<i class="fa fa-angle-double-left"></i>'
+    document.getElementById("sidebar_btn").innerHTML = a
+    count = 1;
+  }
+  else {
+    var b = '<i class="fa fa-angle-double-right"></i>'
+    document.getElementById("sidebar_btn").innerHTML = b
+    count = 0;
+  }
+}
