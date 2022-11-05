@@ -24,50 +24,33 @@
     <link rel="stylesheet" href="../css/home.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid pt-1">
-          <a class="navbar-brand d-flex justify-content-start" href="#">
+        <div class="container-fluid pt-1 ">
+          <a class="navbar-brand d-flex justify-content-start " href="#">
             <span>
               <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
             </span>
-
-            <div class="navbar_content text-center">
-              <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
-              <p class="text-white fw-bolder text-opacity-75">
-                Vision to your Future
-              </p>
+  
+            <div class="navbar_content text-center" >
+              <h2 class="fs-3 fw-bolder  mb-0 mt-1 text_center_h2" >Crop Vision</h2>
+              <p class="fw-bolder ">Vision to your Future</p>
             </div>
           </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fa fa-bars"></i>
           </button>
-          <div
-            class="collapse navbar-collapse justify-content-around"
-            id="navbarSupportedContent"
-          >
-            <ul class="navbar-nav">
+          <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+            <ul class="navbar-nav ">
               <li class="nav-item me-1">
-                <a
-                  class="nav-link fw-semibold"
-                  aria-current="page"
-                  href="../index.html"
-                  >HOME</a
-                >
+                <a class="nav-link fw-semibold " aria-current="page" href="../index.html">HOME</a>
               </li>
               <li class="nav-item me-1">
-                <a class="nav-link active fw-semibold" href="./about.html">ABOUT</a>
+                <a class="  nav-link  active    fw-semibold" href="./about.html">ABOUT</a>
               </li>
               <li class="nav-item me-1">
-                <a class="nav-link fw-semibold" href="./service.html">SERVICE</a>
+                <a class="  nav-link   fw-semibold  " href="./service.html">SERVICE</a>
               </li>
               <li class="nav-item dropdown me-1">
                 <a class="  nav-link dropdown-toggle   fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
@@ -82,13 +65,14 @@
                 </ul>
               </li>
               <li class="nav-item me-1">
-                <a class="nav-link fw-semibold" href="#">CONTACT</a>
+                <a class="  nav-link   fw-semibold " href="./contact.html">CONTACT</a>
               </li>
             </ul>
-            <button class="btn btn-success rounded-circle" type="submit">
-              <i class="fa fa-search"></i>
+            <button class=" btn  rounded-circle btn_header" btn_header type="submit">
+              <i class="fa fa-search "></i>
             </button>
           </div>
+  
         </div>
       </nav>
     </header>
@@ -478,7 +462,10 @@
         <div class="footer_title_shape"></div>
         <p>WordPress Theme by <span>W3Layouts.</span></p>
       </div>
+      <button id="top" style="display: block ;" onclick=" topFunction()">
+        <span class="fa fa-angle-up"></span></button>
     </footer>
+    <script src="../js/home.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
   integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
