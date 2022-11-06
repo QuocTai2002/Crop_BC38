@@ -2,6 +2,15 @@
   box-sizing: border-box;
   margin: 0;
 }
+:root {
+  --pramry-color: white;
+  --text-seconde-color:#3f3a64;
+}
+
+.dark_them{
+  --pramry-color: #151421;
+  --text-seconde-color:white;;
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -86,6 +95,18 @@ header button.btn_header{
   height: 45px; 
   background-color: #009f4d;
   color: white;
+  margin-left: 300px;
+
+}
+header button.dark_more{
+  background-color: transparent;
+  font-size: 25px;
+  border-radius: 50%;
+  width:45px ;
+  height: 45px;
+  border: none;
+  color: white;
+
 }
 .carousel-item .carousel-caption {
   z-index: 2;
@@ -759,7 +780,7 @@ footer {
 }
 header.style_header{
   padding: 0px;
-  background-color:white;
+  background-color:var(--pramry-color);
   height: 80px;
   border-bottom: none;
   box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);
@@ -767,17 +788,20 @@ header.style_header{
   z-index: 99;
 }
 header.style_header .text-center  {
-  color: #3f3a64;
+  color: var(--text-seconde-color);
 }
 header.style_header nav {
   padding: 0;
 }
 header.style_header .nav-item .nav-link {
-  color: #3f3a64;
+  color: var(--text-seconde-color);
 }
 header.style_header .nav-item .nav-link.active{
   color: #009f4d;
   opacity: .9;
+}
+header.style_header button.dark_more{
+  color:var(--text-seconde-color);
 }
 footer .sidebar button.btn{
  position: fixed;
