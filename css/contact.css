@@ -17,6 +17,37 @@ main .carousel .carousel-item {
 main .carousel .carousel-item .carousel-caption {
   top: 160px;
 }
+:root {
+  --pramry-color: white;
+  --text-seconde-color:#3f3a64;
+  --bg-carousel-color:rgba(29, 42, 55, 0.7);
+  --bg-color:#fff;
+  --control-color:#fff;
+  --font-color:#666;
+  --bg-gray:#f7f7f7;
+  --item-color-sv:#f8f9fa;
+  --input-color:#f7f7f7;
+  --bg-light:#f8f9fa;
+  --iframe-filter: grayscale(0%);
+  --border-color-light: #eee;
+
+}
+
+.dark_them{
+  --pramry-color: #151421;
+  --text-seconde-color:white;
+  --bg-carousel-color:rgba(29, 42, 55, 0.8);
+  --bg-color:#151421;
+  --control-color:#fff;
+  --font-color:#c2c2c2;
+  --bg-gray:#100f19;
+  --item-color-sv:#100f19;
+  --input-color:#100f19;
+  --bg-light:#100f19;
+  --iframe-filter: grayscale(100%);
+  --border-color-light: rgba(255, 255, 255, 0.1);
+}
+
 .agency_container {
   max-width: 80%;
   margin: 0 auto;
@@ -27,13 +58,13 @@ main .carousel .carousel-item .carousel-caption {
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
-  color: #3f3a64;
+  color: var(--text-seconde-color);
   margin-bottom: 15px;
 }
 .agency_container p {
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  color: var(--font-color);
   opacity: 0.8;
   margin-bottom: 50px;
 }
@@ -45,7 +76,7 @@ main .carousel .carousel-item .carousel-caption {
 .agency_item {
   padding: 30px;
   border-radius: 8px;
-  background-color: white;
+  background-color: var(--bg-color);
   display: flex;
   margin-bottom: 60px;
   text-align: left;
@@ -53,22 +84,25 @@ main .carousel .carousel-item .carousel-caption {
 }
 .agency_item i {
   font-size: 35px;
-  color: #3f3a64;
+  color: var(--text-seconde-color);
   margin-right: 25px;
 }
 .agency {
-  background-color: #f8f9fa;
+  background-color: var(--bg-light);
+  border-bottom: 1px solid rgb(153, 153, 153, 0.2);
 }
 .agency iframe {
   margin-bottom: 50px;
+  background-color: var(--iframe-filter);
 }
 .agency_itemt_content h3 {
   font-size: 22px;
   font-weight: 600;
-  color: #3f3a64;
+  color: var(--text-seconde-color);
 }
+
 .agency_itemt_content a {
-  color: #666;
+  color: var(--font-color);
   opacity: 0.8;
 }
 .project_content {
@@ -94,13 +128,19 @@ main .carousel .carousel-item .carousel-caption {
 .agency input {
   padding: 20px 25px;
   border-radius: 8px;
-  border: solid 1px #eee;
+  border: 1px solid var(--border-color-light);
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
+  
+
 .agency textarea {
   border-radius: 8px;
-  border: solid 1px #eee;
+  border: 1px solid var(--border-color-light);
   display: block;
   width: 100%;
+  background-color: var(--bg-color);
+  color: var(--font-color);
 }
 .project_form {
   display: grid;
