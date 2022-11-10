@@ -452,10 +452,15 @@ main .carousel .carousel-item .carousel-caption {
     width: 85%;
     text-align: left;
 }
-.choose_content h3 {
+.choose_content h3 a{
     font-weight: 600;
     font-size: 24px;
     color: #3f3a64;
+    -webkit-transition: 0.5s all;
+}
+.choose_content h3 a:hover{
+    color: #009f4d;
+    -webkit-transition: 0.5s all;
 }
 .choose_content p {
     font-size: 17px;
@@ -513,5 +518,11 @@ main .carousel .carousel-item .carousel-caption {
 }
 .get_start .button button i{
     margin-left: 5px;
+}
+
+
+/* Reponsive */
+@media only screen and (max-width: 911px){
+    
 }
 

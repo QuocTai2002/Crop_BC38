@@ -5,21 +5,23 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Corpvision</title>
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   <!-- font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <!--  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
   <!-- css style  -->
   <link rel="stylesheet" href="./css/home.css">
-  <!-- sw -->
+
 
 </head>
 
 <body>
   <!-- head -->
-  <header id="header" >
+  <header id="header">
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid pt-1 ">
         <a class="navbar-brand d-flex justify-content-start " href="#">
@@ -27,14 +29,14 @@
             <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
           </span>
 
-          <div class="navbar_content text-center" >
-            <h2 class="fs-3 fw-bolder  mb-0 mt-1 text_center_h2" >Crop Vision</h2>
+          <div class="navbar_content text-center">
+            <h2 class="fs-3 fw-bolder  mb-0 mt-1 text_center_h2">Crop Vision</h2>
             <p class="fw-bolder ">Vision to your Future</p>
           </div>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
+          <i class="fa-solid fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
           <ul class="navbar-nav ">
@@ -53,10 +55,10 @@
                 PAGES
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-secondary" href="#">BLOG POSTS</a></li>
-                <li><a class="dropdown-item text-secondary" href="#">404 PAGE</a></li>
-                <li><a class="dropdown-item text-secondary" href="#">LANDING PAGE</a></li>
-                <li><a class="dropdown-item text-secondary" href="#">ELEMENTS PAGE</a></li>
+                <li><a class="dropdown-item text-secondary" href="./html/page_blog_post/blog_post.html">BLOG POSTS</a></li>
+                <li><a class="dropdown-item text-secondary" href="./html/page_404/page_404.html">404 PAGE</a></li>
+                <li><a class="dropdown-item text-secondary" href="./html/learning_page/learning.html">LANDING PAGE</a></li>
+                <li><a class="dropdown-item text-secondary" href="./html/element_page/element.html">ELEMENTS PAGE</a></li>
               </ul>
             </li>
             <li class="nav-item me-1">
@@ -75,7 +77,7 @@
   </header>
   <!-- main -->
   <main>
-    <section class="carousel">
+    <section class="carousel ">
       <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active" data-bs-interval="3500">
@@ -294,48 +296,119 @@
         </div>
 
         <div class="gallery_content">
-          <div class="gallery_item">
+
+          <div class="gallery_item position-relative">
             <a href="#">
               <img class="card-img-bottom d-block"
                 src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c1.jpg"
                 alt="Card image cap">
+                <div class="hover">
+                </div>
+                <div class="hover_item">
+                  <div class="title">
+                    <p>Project 1</p>
+                  </div>
+                  <div class="content">
+                    <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                  </div>
+                </div>
             </a>
+           
           </div>
-          <div class="gallery_item">
+
+          <div class="gallery_item position-relative">
             <a href="#">
               <img class="card-img-bottom d-block"
                 src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c2.jpg"
                 alt="Card image cap">
-            </a>
+                <div class="hover">
+                  <div class="hover_item">
+                    <div class="title">
+                      <p>Project 1</p>
+                    </div>
+                    <div class="content">
+                      <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                    </div>
+                  </div>
+                </div>
+            </a>  
+            
           </div>
-          <div class="gallery_item">
+          
+          <div class="gallery_item position-relative">
             <a href="#">
               <img class="card-img-bottom d-block"
                 src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c3.jpg"
                 alt="Card image cap">
+                <div class="hover">
+                  <div class="hover_item">
+                    <div class="title">
+                      <p>Project 1</p>
+                    </div>
+                    <div class="content">
+                      <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                    </div>
+                  </div>
+                </div>
             </a>
+            
           </div>
-          <div class="gallery_item">
+          
+          <div class="gallery_item position-relative">
             <a href="#">
               <img class="card-img-bottom d-block"
                 src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c4.jpg"
                 alt="Card image cap">
-            </a>
+                <div class="hover">
+                  <div class="hover_item">
+                    <div class="title">
+                      <p>Project 1</p>
+                    </div>
+                    <div class="content">
+                      <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                    </div>
+                  </div>
+                </div>
+            </a>  
+                     
           </div>
-          <div class="gallery_item">
+          
+          <div class="gallery_item position-relative">
             <a href="#">
               <img class="card-img-bottom d-block"
                 src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c5.jpg"
                 alt="Card image cap">
-            </a>
+                <div class="hover">
+                  <div class="hover_item">
+                    <div class="title">
+                      <p>Project 1</p>
+                    </div>
+                    <div class="content">
+                      <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                    </div>
+                  </div>
+                </div>
+              </a>
           </div>
-          <div class="gallery_item">
+          
+          <div class="gallery_item position-relative">
             <a href="#">
               <img class="card-img-bottom d-block"
                 src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c6.jpg"
                 alt="Card image cap">
+                <div class="hover">
+                  <div class="hover_item">
+                    <div class="title">
+                      <p>Project 1</p>
+                    </div>
+                    <div class="content">
+                      <p>Quisque ut lectus, eros et, sed commodo risus.</p>
+                    </div>
+                  </div>
+                </div>
             </a>
           </div>
+          
         </div>
         <div class="company-logos border-top">
           <div class="company">
@@ -427,10 +500,82 @@
       <div class="container">
         <div class="title_small">
           <p>HAPPY CLIENTS FEEDBACK</p>
-          <h3>Reviews and Testimonials</h3>
+          <h3>Reviews    and Testimonials</h3>
         </div>
 
+        <div class="swiper mySwiper swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+          <div class="swiper-wrapper" id="swiper-wrapper-99249197711210cee" aria-live="polite"
+            style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+            <div class="swiper-slide text-center swiper-slide-active" role="group" aria-label="1 / 9">
+              <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                Dolores molestias adipisci dolo amet!.</p>
+              <div class="people">
+                <div class="img">
+                  <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg"
+                    class="img-fluid" alt="client-img">
 
+                </div>
+                <div class="info">
+                  <h3>Roy Linderson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide text-center swiper-slide-active" role="group" aria-label="2 / 9">
+              <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                Dolores molestias adipisci dolo amet!.</p>
+              <div class="people">
+                <div class="img">
+                  <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg"
+                    class="img-fluid" alt="client-img">
+
+                </div>
+                <div class="info">
+                  <h3>Roy Linderson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide text-center swiper-slide-active" role="group" aria-label="3 / 9">
+              <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                Dolores molestias adipisci dolo amet!.</p>
+              <div class="people">
+                <div class="img">
+                  <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg"
+                    class="img-fluid" alt="client-img">
+
+                </div>
+                <div class="info">
+                  <h3>Roy Linderson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide text-center swiper-slide-active" role="group" aria-label="4 / 9">
+              <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+                voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+                Dolores molestias adipisci dolo amet!.</p>
+              <div class="people">
+                <div class="img">
+                  <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg"
+                    class="img-fluid" alt="client-img">
+
+                </div>
+                <div class="info">
+                  <h3>Roy Linderson</h3>
+                  <p>Student</p>
+                </div>
+              </div>
+            </div>
+            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
       </div>
     </section>
 
@@ -445,124 +590,124 @@
         <div class="row">
           <div class="item col-md-6 col-lg-4">
             <div class="card">
-              <div class="card_header">
-                <a href="#">
-                  <img width="556" height="371"
-                    src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg"
-                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
-                    srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg 556w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-360x240.jpg 360w"
-                    sizes="(max-width: 556px) 100vw, 556px">
-                </a>
-              </div>
-              <div class="card_body">
-                <div class="review">
-                  <p>
-                    <a href="#">Startup Business</a>
-                  </p>
-                </div>
-                <a href="#">Hello World!</a>
-              </div>
-              <div class="card_footer">
-                <div class="author">
-                  <a href="#">
-                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
-                      alt="" class="img-fluid rounded-circle">
-                  </a>
-                  <div class="meta">
-                    <span>by</span>
-                    <a href="#">
-                      W3Layouts
+                <div class="card_header position-relative">
+                    <a href="#" class="zoom">
+                        <img width="556" height="371"
+                            src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                            alt="Hello world!"
+                            srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg 556w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-360x240.jpg 360w"
+                            sizes="(max-width: 556px) 100vw, 556px">
                     </a>
-                  </div>
-                  <div class="date">
-                    <p>April 1, 2021</p>
-                  </div>
                 </div>
-              </div>
+                <div class="card_body">
+                    <div class="title">
+                        <p>Startup Business</p>
+                        <a href="#" class="mt-27">Helo World <br>
+                        </a>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="author">
+                        <a href="#">
+                            <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
+                                alt="" class="img-fluid rounded-circle">
+                        </a>
+                        <div class="meta">
+                            <span>by</span>
+                            <a href="#">
+                                W3Layouts
+                            </a>
+                        </div>
+                        <div class="date">
+                            <p>April 1, 2021</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
 
 
-          <div class="item col-md-6 col-lg-4">
+        <div class="item col-md-6 col-lg-4">
             <div class="card">
-              <div class="card_header">
-                <a href="#">
-                  <img width="555" height="370"
-                    src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg"
-                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
-                    srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg 555w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-360x240.jpg 360w"
-                    sizes="(max-width: 555px) 100vw, 555px">
-                </a>
-              </div>
-              <div class="card_body">
-                <div class="review">
-                  <p>
-                    <a href="#">Startup Business</a>
-                  </p>
-                </div>
-                <a href="#">
-                  Companies in NY launched a joint project on a three-tower hall</a>
-              </div>
-              <div class="card_footer">
-                <div class="author">
-                  <a href="#">
-                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
-                      alt="" class="img-fluid rounded-circle">
-                  </a>
-                  <div class="meta">
-                    <span>by</span>
-                    <a href="#">
-                      W3Layouts
+                <div class="card_header">
+                    <a href="#" class="zoom">
+                        <img width="555" height="370"
+                            src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                            alt="Companies in NY launched a joint project on a three-tower hall" loading="lazy"
+                            srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg 555w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-360x240.jpg 360w"
+                            sizes="(max-width: 555px) 100vw, 555px">
                     </a>
-                  </div>
-                  <div class="date">
-                    <p>April 1, 2021</p>
-                  </div>
                 </div>
-              </div>
+                <div class="card_body">
+                    <div class="title">
+                        <p>Startup Business</p>
+                        <a href="https://wp.w3layouts.com/corpvision/2021/04/01/companies-in-ny-launched-a-joint-project-on-a-three-tower-hall/"
+                            class="blog-desc">
+                            Companies in NY launched a joint project on a three-tower hall </a>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="author">
+                        <a href="#">
+                            <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
+                                alt="" class="img-fluid rounded-circle">
+                        </a>
+                        <div class="meta">
+                            <span>by</span>
+                            <a href="#">
+                                W3Layouts
+                            </a>
+                        </div>
+                        <div class="date">
+                            <p>April 1, 2021</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
 
 
-          <div class="item col-md-6 col-lg-4">
+        <div class="item col-md-6 col-lg-4">
             <div class="card">
-              <div class="card_header">
-                <a href="#">
-                  <img width="555" height="370"
-                    src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg"
-                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
-                    srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg 555w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-360x240.jpg 360w"
-                    sizes="(max-width: 555px) 100vw, 555px">
-                </a>
-              </div>
-              <div class="card_body">
-                <div class="review">
-                  <p>
-                    <a href="#">Marketing Strategy</a>
-                  </p>
-                </div>
-                <a href="#">
-                  Design breakthrough upgrades the product and ready to launch</a>
-              </div>
-              <div class="card_footer">
-                <div class="author">
-                  <a href="#">
-                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
-                      alt="" class="img-fluid rounded-circle">
-                  </a>
-                  <div class="meta">
-                    <span>by</span>
-                    <a href="#">
-                      W3Layouts
+                <div class="card_header">
+                    <a href="#" class="zoom">
+                        <img width="555" height="370"
+                            src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg"
+                            class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                            alt="Design breakthrough upgrades the product and ready to launch" loading="lazy"
+                            srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg 555w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-360x240.jpg 360w"
+                            sizes="(max-width: 555px) 100vw, 555px">
                     </a>
-                  </div>
-                  <div class="date">
-                    <p>April 1, 2021</p>
-                  </div>
                 </div>
-              </div>
+                <div class="card_body">
+                    <div class="title">
+                        <p>Marketing Strategy</p>
+                        <a href="https://wp.w3layouts.com/corpvision/2021/04/01/design-breakthrough-upgrades-the-product-and-ready-to-launch/"
+                            class="blog-desc">
+                            Design breakthrough upgrades the product and ready to launch </a>
+                    </div>
+                </div>
+                <div class="card_footer">
+                    <div class="author">
+                        <a href="#">
+                            <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
+                                alt="" class="img-fluid rounded-circle">
+                        </a>
+                        <div class="meta">
+                            <span>by</span>
+                            <a href="#">
+                                W3Layouts
+                            </a>
+                        </div>
+                        <div class="date">
+                            <p>April 1, 2021</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
         </div>
       </div>
     </section>
@@ -570,19 +715,18 @@
     <!-- Letter -->
     <section class="letter">
       <div class="container py-md-5 py-sm-4 py-2 HomePageNewsletter">
-          <div class="bottom-info">
-              <div class="header-section text-center">
-                  <h3 class="title-big">Let’s find out how to work together</h3>
-                  <p class="mt-3 pr-lg-5">Lorem ipsum dolor sit amet elit. Velit beatae
-                      rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
-              </div>
-              <form action="" class="subscribe mt-5" method="post">
-                  <div class="input-group-text"><span class="fa fa-paper-plane"></span></div>
-                  <input type="email" name="email" 
-                  placeholder="Your Email Address" required="">
-                  <button class="btn btn-style btn-primary">Subscribe</button>
-                </form>
+        <div class="bottom-info">
+          <div class="header-section text-center">
+            <h3 class="title-big">Let’s find out how to work together</h3>
+            <p class="mt-3 pr-lg-5">Lorem ipsum dolor sit amet elit. Velit beatae
+              rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
           </div>
+          <form action="" class="subscribe mt-5" method="post">
+            <div class="input-group-text"><span class="fa fa-paper-plane"></span></div>
+            <input type="email" name="email" placeholder="Your Email Address" required="">
+            <button class="btn btn-style btn-primary">Subscribe</button>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -591,75 +735,80 @@
 
   <!-- footer -->
   <footer>
-    <div class="footer_content">
-      <div class="footer_crop">
-        <a class="navbar-brand d-flex justify-content-start " href="#">
-          <span>
-            <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
-          </span>
-
-          <div class="navbar_content text-center">
-            <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
-            <p class="text-white fw-bolder ">Vision to your Future</p>
-          </div>
-        </a>
-        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem
-          ipsum dolor sit amet Semper at elit team advisors.</p>
-        <ul>
-          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
-          <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
+    <div class="container">
+      <div class="footer_content">
+        <div class="footer_crop">
+          <a class="navbar-brand d-flex justify-content-start " href="#">
+            <span>
+              <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
+            </span>
+  
+            <div class="navbar_content text-center">
+              <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
+              <p class="text-white fw-bolder ">Vision to your Future</p>
+            </div>
+          </a>
+          <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem
+            ipsum dolor sit amet Semper at elit team advisors.</p>
+          <ul>
+            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="fab fa-twitter"></i></a></li>
+            <li><a href=""><i class="fab fa-instagram"></i></a></li>
+            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+          </ul>
+        </div>
+        <div class="footer_contact">
+          <h3>CONTACT INFO</h3>
+          <ul>
+            <li>
+              <p>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
+            </li>
+            <li>
+              <p>Phone Number :<a href="">+1(21) 234 4567</a></p>
+            </li>
+            <li>
+              <p>Email :<a class="active" href=""> info@example.com</a></p>
+            </li>
+            <li>
+              <p>Support :<a class="active" href=""> info@support.com</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_categories">
+          <h3>CATEGORIES</h3>
+          <ul>
+            <li><a href="">Marketing Strategy</a></li>
+            <li><a href="">Startup Business</a></li>
+            <li><a href="">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer_meta">
+          <h3>META</h3>
+          <ul>
+            <li><a href="">Log in</a></li>
+            <li><a href="">Entries feed</a></li>
+            <li><a href="">Comments feed</a></li>
+            <li><a href="">WordPress.org</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="footer_contact">
-        <h3>CONTACT INFO</h3>
-        <ul>
-          <li>
-            <p>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
-          </li>
-          <li>
-            <p>Phone Number :<a href="">+1(21) 234 4567</a></p>
-          </li>
-          <li>
-            <p>Email :<a class="active" href=""> info@example.com</a></p>
-          </li>
-          <li>
-            <p>Support :<a class="active" href=""> info@support.com</a></p>
-          </li>
-        </ul>
+      <div class="footer_tilte">
+        <p>© 2022 Corp Vision All Rights Reserved</p>
+        <div class="footer_title_shape"></div>
+        <p>WordPress Theme by <span>W3Layouts.</span></p>
       </div>
-      <div class="footer_categories">
-        <h3>CATEGORIES</h3>
-        <ul>
-          <li><a href="">Marketing Strategy</a></li>
-          <li><a href="">Startup Business</a></li>
-          <li><a href="">Web development</a></li>
-        </ul>
-      </div>
-      <div class="footer_meta">
-        <h3>META</h3>
-        <ul>
-          <li><a href="">Log in</a></li>
-          <li><a href="">Entries feed</a></li>
-          <li><a href="">Comments feed</a></li>
-          <li><a href="">WordPress.org</a></li>
-        </ul>
-      </div>
+      <button id="top" style="display: block ;" onclick=" topFunction()">
+        <span class="fa fa-angle-up"></span></button>
     </div>
-    <div class="footer_tilte">
-      <p>© 2022 Corp Vision All Rights Reserved</p>
-      <div class="footer_title_shape"></div>
-      <p>WordPress Theme by <span>W3Layouts.</span></p>
-    </div>
-    <button id="top" style="display: block ;" onclick=" topFunction()">
-      <span class="fa fa-angle-up"></span></button>
 
-      
-      <div class="sidebar">
-        <button id="sidebar_btn" onclick="sidebar()" class="btn  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa fa-angle-double-left"></i></button>
 
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+    <div class="sidebar">
+      <button id="sidebar_btn" onclick="sidebar()" class="btn  " type="button" data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i
+          class="fa fa-angle-double-left"></i></button>
+
+      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+        id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
         <div class="offcanvas-header">
           <ul>
             <li><a href=""><i class="fa fa-arrow-left"></i> <span>Back</span></a></li>
@@ -668,12 +817,12 @@
           </ul>
 
         </div>
-      
+
       </div>
-      </div>
-      
+    </div>
+
   </footer>
- 
+
   <script src="./js/home.js"></script>
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -683,4 +832,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
     </script>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 </body>
