@@ -1,0 +1,1047 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Element Page</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <!-- css style  -->
+    <link rel="stylesheet" href="../css/element.css" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid pt-1">
+                <a class="navbar-brand d-flex justify-content-start" href="#">
+                    <span>
+                        <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
+                    </span>
+
+                    <div class="navbar_content text-center">
+                        <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
+                        <p class="text-white fw-bolder text-opacity-75">
+                            Vision to your Future
+                        </p>
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-1">
+                            <a class="nav-link active fw-semibold" aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item me-1">
+                            <a class="nav-link fw-semibold" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item me-1">
+                            <a class="nav-link fw-semibold" href="#">SERVICE</a>
+                        </li>
+                        <li class="nav-item dropdown me-1">
+                            <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                PAGES
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item text-secondary" href="#">BLOG POSTS</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-secondary" href="#">404 PAGE</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-secondary" href="#">LANDING PAGE</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item text-secondary" href="#">ELEMENTS PAGE</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item me-1">
+                            <a class="nav-link fw-semibold" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-success rounded-circle" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CAROUSEL -->
+    <section class="carousel">
+        <div class="carousel_content">
+            <h2 class="text-center">Blog Post</h2>
+            <p class="text-center">
+                Find all our latest news, insights, and events
+            </p>
+        </div>
+        <div class="hero_play"></div>
+    </section>
+
+    <!-- Jumbotron -->
+    <section class="jumbotron">
+        <div class="container py-lg-5 py-md-4 py-2">
+            <div class="row">
+                <div class="content col-lg-12">
+                    <h2 class="mb-3">Jumbotron</h2>
+
+                <div class="jumbotron_top">
+                    <h3>Hello, Word!</h3>
+                    <p class="p1">
+                        This is a simple hero unit, a simple jumbotron-style component for
+                        calling extra attention to featured content or information.
+                    </p>
+                    <hr class="my-4" />
+                    <p class="p2">
+                        It uses utility classes for typography and spacing to space content
+                        out within the larger container.
+                    </p>
+                    <div class="btn mt-5">
+                        <a href="#">Learn More</a>
+                    </div>
+                </div>
+
+                <div class="jumbotron_bottom">
+                    <div class="code">
+                        <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-4"</span><span class="nt">&gt;</span>Hello, world!<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;hr</span> <span class="na">class=</span><span class="s">"my-4"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>It uses utility classes for typography and spacing to space content out within the larger container.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Learn more<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+            </pre>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fluid Jumbotron -->
+    <section class="fluid_jumbotron">
+        <div class="container">
+            <h2 class="mb-3 title">Fluid Jumbotron</h2>
+
+            <div class="fluid_top">
+                <h3>Fluid jumbotron</h3>
+                <p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            </div>
+
+            <div class="code">
+                <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"jumbotron jumbotron-fluid"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"display-4"</span><span class="nt">&gt;</span>Fluid jumbotron<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"lead"</span><span class="nt">&gt;</span>This is a modified jumbotron that occupies the entire horizontal space of its parent.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Card Decks -->
+    <section class="card_deck">
+        <div class="container">
+            <h2 class="mb-3 title"> Card Decks</h2>
+
+            <div class="content">
+                <div class="row">
+                    <div class="item col-lg-4">
+                        <div class="card">
+                            <div class="card_header">
+                                <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg"
+                                    class="card-img-top img-fluid" alt="Card image cap">
+                            </div>
+                            <div class="card_body">
+                                <h3>Card title</h3>
+                                <p>This is a longer card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card_footer">
+                                <p>Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item col-lg-4">
+                        <div class="card">
+                            <div class="card_header">
+                                <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b2.jpg"
+                                    class="card-img-top img-fluid" alt="Card image cap">
+                            </div>
+                            <div class="card_body">
+                                <h3>Card title</h3>
+                                <p>This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card_footer">
+                                <p>Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="item col-lg-4">
+                        <div class="card ">
+                            <div class="card_header">
+                                <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b3.jpg"
+                                    class="card-img-top img-fluid" alt="Card image cap">
+                            </div>
+                            <div class="card_body">
+                                <h3>Card title</h3>
+                                <p>This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This card has even longer content than the first to show that equal height
+                                    action.</p>
+                            </div>
+                            <div class="card_footer">
+                                <p>Last updated 3 mins ago</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code">
+                <pre>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-deck"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">"assets/images/b1.jpg"</span> <span class="na">alt=</span><span class="s">"Card image cap"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Card title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Last updated 3 mins ago<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">"assets/images/b2.jpg"</span> <span class="na">alt=</span><span class="s">"Card image cap"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Card title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>This card has supporting text below as a natural lead-in to additional content.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Last updated 3 mins ago<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">class=</span><span class="s">"card-img-top"</span> <span class="na">src=</span><span class="s">"assets/images/b3.jpg"</span> <span class="na">alt=</span><span class="s">"Card image cap"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"card-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"card-title"</span><span class="nt">&gt;</span>Card title<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;</span>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"card-text"</span><span class="nt">&gt;&lt;small</span> <span class="na">class=</span><span class="s">"text-muted"</span><span class="nt">&gt;</span>Last updated 3 mins ago<span class="nt">&lt;/small&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span><span class="nt">&lt;/div&gt;</span></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumbs -->
+    <section class="breadcrumbs">
+        <div class="container">
+            <h2 class="mb-3 title">Breadcrumbs </h2>
+            <div class="breadcrumbs_item">
+                <span>Home</span>
+            </div>
+            <div class="breadcrumbs_item">
+                <span><a href="#">Home</a> / Library</span>
+            </div>
+            <div class="breadcrumbs_item">
+                <span>
+                    <a href="#">Home</a> / <a href="#"> Library</a> / Data
+                </span>
+            </div>
+
+            <div class="code">
+                <pre>
+<span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+                        
+    <span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+                        
+    <span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ol</span> <span class="na">class=</span><span class="s">"breadcrumb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Home<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Library<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"breadcrumb-item active"</span> <span class="na">aria-current=</span><span class="s">"page"</span><span class="nt">&gt;</span>Data<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ol&gt;</span>
+    <span class="nt">&lt;/nav&gt;</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- button -->
+    <section class="button">
+        <div class="container">
+            <h2 class="mb-3 title">Buttons </h2>
+            <div class="button_item">
+                <button type="button" class="btn btn-primary mb-2">Primary</button>
+                <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+                <button type="button" class="btn btn-success mb-2">Success</button>
+                <button type="button" class="btn btn-danger mb-2">Danger</button>
+                <button type="button" class="btn btn-warning mb-2">Warning</button>
+                <button type="button" class="btn btn-info mb-2">Info</button>
+                <button type="button" class="btn btn-light mb-2">Light</button>
+                <button type="button" class="btn btn-dark mb-2">Dark</button>
+                <button type="button" class="btn btn-link mb-2">Link</button>
+            </div>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+                </pre>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Outline Buttons -->
+    <section class="outline_button mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Outline Buttons</h2>
+            <div class="components-info">
+                <button type="button" class="btn btn-primary mb-2">Primary</button>
+                <button type="button" class="btn btn-secondary mb-2">Secondary</button>
+                <button type="button" class="btn btn-success mb-2">Success</button>
+                <button type="button" class="btn btn-danger mb-2">Danger</button>
+                <button type="button" class="btn btn-warning mb-2">Warning</button>
+                <button type="button" class="btn btn-info mb-2">Info</button>
+                <button type="button" class="btn btn-light mb-2">Light</button>
+                <button type="button" class="btn btn-dark mb-2">Dark</button>
+                <button type="button" class="btn btn-link mb-2">Link</button>
+            </div>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger"</span><span class="nt">&gt;</span>Danger<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-info"</span><span class="nt">&gt;</span>Info<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-light"</span><span class="nt">&gt;</span>Light<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-dark"</span><span class="nt">&gt;</span>Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span></code>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Button Tags -->
+    <section class="button_tag mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Button Tags</h2>
+            <div class="components-info">
+                <a class="btn btn-primary mb-2 green" href="#link" role="button">Link</a>
+                <a class="btn btn-primary mb-2 green" href="#link" role="button">Button</a>
+                <a class="btn btn-primary mb-2 green" href="#link" role="button">Input</a>
+                <a class="btn btn-primary mb-2 green" href="#link" role="button">Submit</a>
+                <a class="btn btn-primary mb-2 green" href="#link" role="button">Reset</a>
+
+            </div>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"Input"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">value=</span><span class="s">"Reset"</span><span class="nt">&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+    <!-- Modal Popup -->
+    <section class="modal_popup mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Modal Popup</h2>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Popup modal
+            </button>
+            <div class="code">
+                <pre>
+        <span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModal"</span><span class="nt">&gt;</span>
+Popup modal
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- Modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModal"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalLabel"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalLabel"</span><span class="nt">&gt;</span>Popup Modal<span class="nt">&lt;/h5&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+      <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+      Woohoo, you're reading this text in a modal!
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+      <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Vertically Centered Modal -->
+    <section class="vertically_modal mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Vertically Centered Modal</h2>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                Vertically Centered Modal
+            </button>
+            <div class="code">
+                <pre>
+<span class="c">&lt;!-- Button trigger modal --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span> <span class="na">data-toggle=</span><span class="s">"modal"</span> <span class="na">data-target=</span><span class="s">"#exampleModalCenter"</span><span class="nt">&gt;</span>
+Centered modal
+<span class="nt">&lt;/button&gt;</span>
+                    
+<span class="c">&lt;!-- Modal --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal fade"</span> <span class="na">id=</span><span class="s">"exampleModalCenter"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">role=</span><span class="s">"dialog"</span> <span class="na">aria-labelledby=</span><span class="s">"exampleModalCenterTitle"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-dialog modal-dialog-centered"</span> <span class="na">role=</span><span class="s">"document"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-content"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-header"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"modal-title"</span> <span class="na">id=</span><span class="s">"exampleModalCenterTitle"</span><span class="nt">&gt;</span>Vertically Centered Modal<span class="nt">&lt;/h5&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"close"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span> <span class="na">aria-label=</span><span class="s">"Close"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span><span class="ni">&amp;times;</span><span class="nt">&lt;/span&gt;</span>
+        <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-body"</span><span class="nt">&gt;</span>
+        Cras mattis consectetur purus sit amet fermentum. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"modal-footer"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span> <span class="na">data-dismiss=</span><span class="s">"modal"</span><span class="nt">&gt;</span>Close<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Save changes<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alerts -->
+    <section class="alerts mt-50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-3 title">Alerts</h2>
+                    <div class="alerts_item">
+                        <div class="alert alert-primary">
+                            A simple primary alert—check it out!
+                        </div>
+                        <div class="alert alert-secondary">
+                            A simple secondary alert—check it out!
+                        </div>
+                        <div class="alert alert-success">
+                            A simple success alert—check it out!
+                        </div>
+                        <div class="alert alert-danger">
+                            A simple danger alert—check it out!
+                        </div>
+                        <div class="alert alert-warning">
+                            A simple warning alert—check it out!
+                        </div>
+                        <div class="alert alert-info">
+                            A simple info alert—check it out!
+                        </div>
+                        <div class="alert alert-light">
+                            A simple light alert—check it out!
+                        </div>
+                        <div class="alert alert-dark">
+                            A simple dark alert—check it out!
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="code">
+                        <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-primary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple primary alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple secondary alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple success alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple danger alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple warning alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple info alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-light"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple light alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-dark"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple dark alert—check it out!
+<span class="nt">&lt;/div&gt;</span>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Link Color -->
+    <section class="link_color mt-50px">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="mb-3 title">Link Color</h2>
+                    <div class="link_color_item">
+                        <div class="alert alert-primary">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                        <div class="alert alert-secondary">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                        <div class="alert alert-success ">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                        <div class="alert alert-danger ">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                        <div class="alert alert-warning ">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                        <div class="alert alert-info ">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                        <div class="alert alert-light ">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                        <div class="alert alert-dark">
+                            A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it
+                            a click if you
+                            like.
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="code">
+                        <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-primary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple primary alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-secondary"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple secondary alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-success"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple success alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-danger"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple danger alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-warning"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple warning alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-info"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple info alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-light"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple light alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"alert alert-dark"</span> <span class="na">role=</span><span class="s">"alert"</span><span class="nt">&gt;</span>
+A simple dark alert with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"alert-link"</span><span class="nt">&gt;</span>an example link<span class="nt">&lt;/a&gt;</span>. Give it a click if you like.
+<span class="nt">&lt;/div&gt;</span>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Progress Bars -->
+    <section class="progress_bar mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Progress Bars</h2>
+            <div class="progress_bar_item">
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100">
+                    </div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100">
+                    </div>
+                </div>
+            </div>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">aria-valuenow=</span><span class="s">"0"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 25%"</span> <span class="na">aria-valuenow=</span><span class="s">"25"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 50%"</span> <span class="na">aria-valuenow=</span><span class="s">"50"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 75%"</span> <span class="na">aria-valuenow=</span><span class="s">"75"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 100%"</span> <span class="na">aria-valuenow=</span><span class="s">"100"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Backgrounds -->
+    <section class="background mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Backgrounds</h2>
+            <div class="background_item">
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 75%" aria-valuenow="75"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress mb-3">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 85%" aria-valuenow="85"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100"
+                        aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar bg-success"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 25%"</span> <span class="na">aria-valuenow=</span><span class="s">"25"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar bg-info"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 50%"</span> <span class="na">aria-valuenow=</span><span class="s">"50"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar bg-warning"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 75%"</span> <span class="na">aria-valuenow=</span><span class="s">"75"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar bg-danger"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 100%"</span> <span class="na">aria-valuenow=</span><span class="s">"100"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                </pre>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Striped -->
+    <section class="striped mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Striped</h2>
+            <div class="striped_item">
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped" role="progressbar"
+                        aria-label="Default striped example" style="width: 10%" aria-valuenow="10" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+                        aria-label="Success striped example" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-info" role="progressbar"
+                        aria-label="Info striped example" style="width: 50%" aria-valuenow="50" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+                        aria-label="Warning striped example" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+                        aria-label="Danger striped example" style="width: 100%" aria-valuenow="100" aria-valuemin="0"
+                        aria-valuemax="100"></div>
+                </div>
+            </div>
+            <div class="code">
+                <pre><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 10%"</span> <span class="na">aria-valuenow=</span><span class="s">"10"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped bg-success"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 25%"</span> <span class="na">aria-valuenow=</span><span class="s">"25"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped bg-info"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 50%"</span> <span class="na">aria-valuenow=</span><span class="s">"50"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped bg-warning"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 75%"</span> <span class="na">aria-valuenow=</span><span class="s">"75"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"progress-bar progress-bar-striped bg-danger"</span> <span class="na">role=</span><span class="s">"progressbar"</span> <span class="na">style=</span><span class="s">"width: 100%"</span> <span class="na">aria-valuenow=</span><span class="s">"100"</span> <span class="na">aria-valuemin=</span><span class="s">"0"</span> <span class="na">aria-valuemax=</span><span class="s">"100"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+    <!-- Input Group -->
+    <section class="input mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Striped</h2>
+            <div class="input_item">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Recipient's username"
+                        aria-label="Recipient's username" aria-describedby="basic-addon2">
+                    <span class="input-group-text" id="basic-addon2">@example.com</span>
+                </div>
+
+                <label for="basic-url" class="form-label">Your vanity URL</label>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text">$</span>
+                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                    <span class="input-group-text">.00</span>
+                </div>
+
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                    <span class="input-group-text">@</span>
+                    <input type="text" class="form-control" placeholder="Server" aria-label="Server">
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-text">With textarea</span>
+                    <textarea class="form-control" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>@<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Username"</span> <span class="na">aria-label=</span><span class="s">"Username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon1"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                    
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">placeholder=</span><span class="s">"Recipient's username"</span> <span class="na">aria-label=</span><span class="s">"Recipient's username"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon2"</span><span class="nt">&gt;</span>@example.com<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                    
+<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"basic-url"</span><span class="nt">&gt;</span>Your vanity URL<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span> <span class="na">id=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>https://example.com/users/<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"basic-url"</span> <span class="na">aria-describedby=</span><span class="s">"basic-addon3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                    
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group mb-3"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>$<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"Amount (to the nearest dollar)"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-append"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>.00<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                    
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"input-group-prepend"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"input-group-text"</span><span class="nt">&gt;</span>With textarea<span class="nt">&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;textarea</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">aria-label=</span><span class="s">"With textarea"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Input Forms -->
+    <section class="form mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Input Forms</h2>
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                        else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;form&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputEmail1"</span><span class="nt">&gt;</span>Email address<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputEmail1"</span> <span class="na">aria-describedby=</span><span class="s">"emailHelp"</span> <span class="na">placeholder=</span><span class="s">"Enter email"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;small</span> <span class="na">id=</span><span class="s">"emailHelp"</span> <span class="na">class=</span><span class="s">"form-text text-muted"</span><span class="nt">&gt;</span>We'll never share your email with anyone else.<span class="nt">&lt;/small&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"exampleInputPassword1"</span><span class="nt">&gt;</span>Password<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"password"</span> <span class="na">class=</span><span class="s">"form-control"</span> <span class="na">id=</span><span class="s">"exampleInputPassword1"</span> <span class="na">placeholder=</span><span class="s">"Password"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"form-group form-check"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">class=</span><span class="s">"form-check-input"</span> <span class="na">id=</span><span class="s">"exampleCheck1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"form-check-label"</span> <span class="na">for=</span><span class="s">"exampleCheck1"</span><span class="nt">&gt;</span>Check me out<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Submit<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span></pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Objects -->
+    <section class="media-object mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title"> Media Objects</h2>
+            <div class="media">
+                <img src="data:image/jpeg;base64,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"
+                    alt="">
+                <div class="media_body"">
+                    <h5 class=" mb-3 title">Media heading</h5>
+                    <p class="style-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                        sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                </div>
+            </div>
+            <div class="code">
+                <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/images/download.svg"</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h5&gt;</span>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nesting -->
+    <section class="nesting mt-50px">
+        <div class="container">
+            <h2 class="mb-3 title">Nesting</h2>
+            <div class="media">
+                <img src="https://thumbs.dreamstime.com/b/digital-mass-media-objects-color-simple-flat-icon-set-collection-isolated-infographics-digital-mass-media-objects-color-simple-110067612.jpg"
+                    alt="" class="img_fix">
+                <div class="media_body">
+                    <div class="media_body"">
+                        <h5 class=" mb-3 title">Media heading</h5>
+                        <p class="style-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                            sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="media mt-4 ms-4">
+                <img src="https://thumbs.dreamstime.com/b/digital-mass-media-objects-color-simple-flat-digital-mass-media-objects-color-simple-flat-icon-set-collection-isolated-110067727.jpg"
+                    alt="" class="img_fix">
+                <div class="media_body">
+                    <div class="media_body"">
+                    <h5 class=" mb-3 title">Media heading</h5>
+                        <p class="style-p">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante
+                            sollicitudin. Cras
+                            purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac
+                            nisi
+                            vulputate fringilla. Donec lacinia congue felis in faucibus.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="code">
+                <pre>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/images/download.svg"</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h5&gt;</span>
+    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media mt-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">""</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"assets/images/download.svg"</span> <span class="na">class=</span><span class="s">"mr-3"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"media-body"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"mt-0"</span><span class="nt">&gt;</span>Media heading<span class="nt">&lt;/h5&gt;</span>
+        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+                </pre>
+            </div>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <div class="footer_content">
+            <div class="footer_crop">
+                <a class="navbar-brand d-flex justify-content-start" href="#">
+                    <span>
+                        <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
+                    </span>
+
+                    <div class="navbar_content text-center">
+                        <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
+                        <p class="text-white fw-bolder">Vision to your Future</p>
+                    </div>
+                </a>
+                <p>
+                    Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+                    in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper
+                    at elit team advisors.
+                </p>
+                <ul>
+                    <li>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                    </li>
+                    <li>
+                        <a href=""><i class="fab fa-linkedin-in"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_contact">
+                <h3>CONTACT INFO</h3>
+                <ul>
+                    <li>
+                        <p>
+                            Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+                            street, NY - 62617.
+                        </p>
+                    </li>
+                    <li>
+                        <p>Phone Number :<a href="">+1(21) 234 4567</a></p>
+                    </li>
+                    <li>
+                        <p>Email :<a class="active" href=""> info@example.com</a></p>
+                    </li>
+                    <li>
+                        <p>Support :<a class="active" href=""> info@support.com</a></p>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer_categories">
+                <h3>CATEGORIES</h3>
+                <ul>
+                    <li><a href="">Marketing Strategy</a></li>
+                    <li><a href="">Startup Business</a></li>
+                    <li><a href="">Web development</a></li>
+                </ul>
+            </div>
+            <div class="footer_meta">
+                <h3>META</h3>
+                <ul>
+                    <li><a href="">Log in</a></li>
+                    <li><a href="">Entries feed</a></li>
+                    <li><a href="">Comments feed</a></li>
+                    <li><a href="">WordPress.org</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_tilte">
+            <p>© 2022 Corp Vision All Rights Reserved</p>
+            <div class="footer_title_shape"></div>
+            <p>WordPress Theme by <span>W3Layouts.</span></p>
+        </div>
+    </footer>
+</body>
+
+</html>
