@@ -1,684 +1,1099 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <!-- css style  -->
+    <link rel="stylesheet" href="./css/home.css" />
+    <!-- animate -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+      <!-- Link Swiper's CSS -->
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <!-- Bootstrap CSS v5.2.1 -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!-- font-awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <!-- css style  -->
-  <link rel="stylesheet" href="./css/home.css">
-  <!-- sw -->
+  <body>
+    <!-- head -->
+    <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid pt-1">
+          <a class="navbar-brand d-flex justify-content-start" href="#">
+            <span>
+              <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
+            </span>
 
-</head>
-
-<body>
-  <!-- head -->
-  <header id="header" >
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid pt-1 ">
-        <a class="navbar-brand d-flex justify-content-start " href="#">
-          <span>
-            <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
-          </span>
-
-          <div class="navbar_content text-center" >
-            <h2 class="fs-3 fw-bolder  mb-0 mt-1 text_center_h2" >Crop Vision</h2>
-            <p class="fw-bolder ">Vision to your Future</p>
+            <div class="navbar_content text-center">
+              <h2 class="fs-3 fw-bolder mb-0 mt-1 text_center_h2">
+                Crop Vision
+              </h2>
+              <p class="fw-bolder">Vision to your Future</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-around"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-1">
+                <a
+                  class="nav-link active fw-semibold"
+                  aria-current="page"
+                  href="./index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link fw-semibold" href="./html/about.html"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link fw-semibold" href="./html/service.html"
+                  >SERVICE</a
+                >
+              </li>
+              <li class="nav-item dropdown me-1">
+                <a
+                  class="nav-link dropdown-toggle fw-semibold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item text-secondary" href="#"
+                      >BLOG POSTS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-secondary" href="#"
+                      >404 PAGE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-secondary" href="#"
+                      >LANDING PAGE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-secondary" href="#"
+                      >ELEMENTS PAGE</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link fw-semibold" href="./html/contact.html"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+            <div class="btn_navbar">
+              <button
+                class="btn rounded-circle btn_header"
+                btn_header
+                type="submit"
+              >
+                <i class="fa fa-search"></i>
+              </button>
+              <button class="dark_more" onclick="dark()" id="dark_light">
+                <i class="fa fa-moon"></i>
+              </button>
+            </div>
           </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-          <ul class="navbar-nav ">
-            <li class="nav-item me-1">
-              <a class="nav-link  active  fw-semibold " aria-current="page" href="./index.html">HOME</a>
-            </li>
-            <li class="nav-item me-1">
-              <a class="  nav-link  fw-semibold" href="./html/about.html">ABOUT</a>
-            </li>
-            <li class="nav-item me-1">
-              <a class="  nav-link   fw-semibold  " href="./html/service.html">SERVICE</a>
-            </li>
-            <li class="nav-item dropdown me-1">
-              <a class="  nav-link dropdown-toggle   fw-semibold" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                PAGES
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item text-secondary" href="#">BLOG POSTS</a></li>
-                <li><a class="dropdown-item text-secondary" href="#">404 PAGE</a></li>
-                <li><a class="dropdown-item text-secondary" href="#">LANDING PAGE</a></li>
-                <li><a class="dropdown-item text-secondary" href="#">ELEMENTS PAGE</a></li>
+        </div>
+      </nav>
+    </header>
+    <!-- main -->
+    <main>
+      <section class="carousel">
+        <div
+          id="carouselExampleControls"
+          class="carousel slide carousel-fade"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="3500">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg"
+                class="d-block"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h2
+                  class="animate__animated animate__flipInX animate__delay-1s"
+                >
+                  We will solve your issues our vision to your future
+                </h2>
+                <p class="animate__animated animate__fadeInDown">
+                  Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                  dolore <br />
+                  magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                </p>
+                <button
+                  class="animate__animated animate__backInUp animate__delay-1s"
+                >
+                  Learn more
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b2.jpg"
+                class="d-block"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h2
+                  class="animate__animated animate__fadeInDown animate__delay-1s"
+                >
+                  Embracing success do our best, need best advice
+                </h2>
+                <p class="animate__animated animate__fadeInDown">
+                  Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                  dolore <br />
+                  magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                </p>
+                <button
+                  class="animate__animated animate__fadeInDown animate__delay-1s"
+                >
+                  Get Started
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b3.jpg"
+                class="d-block"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h2
+                  class="animate__animated animate__fadeInUp animate__delay-1s"
+                >
+                  Digital transformation driven by technology
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                  Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                  dolore <br />
+                  magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                </p>
+                <button
+                  class="animate__animated animate__fadeInDown animate__delay-1s"
+                >
+                  Contact Now
+                </button>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3500">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b4.jpg"
+                class="d-block"
+                alt="..."
+              />
+              <div class="carousel-caption d-md-block">
+                <h2
+                  class="animate__animated animate__flipInX animate__delay-1s"
+                >
+                  For those who believe in leaving a mark
+                </h2>
+                <p class="animate__animated animate__fadeInDown">
+                  Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
+                  dolore <br />
+                  magna aliqua. Ut enim ad minim veniam, quis nisi ut ea.
+                </p>
+                <button
+                  class="animate__animated animate__backInUp animate__delay-1s"
+                >
+                  Learn more
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            style="box-shadow: 0 0 15px gray"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev"
+          >
+            <span aria-hidden="true">
+              <i class="fa fa-arrow-left"></i>
+            </span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            style="box-shadow: 0 0 15px gray"
+            type="button"
+            data-bs-target="#carouselExampleControls"
+            data-bs-slide="next"
+          >
+            <span aria-hidden="true">
+              <i class="fa fa-arrow-right"></i>
+            </span>
+            <span class="visually-hidden">Next</span>
+          </button>
+          <div class="shape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
+              <path fill-opacity="1">
+                <animate
+                  attributeName="d"
+                  dur="20000ms"
+                  repeatCount="indefinite"
+                  values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
+                  M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;"
+                ></animate>
+              </path>
+            </svg>
+            <div class="carousel_backgroud"></div>
+          </div>
+        </div>
+      </section>
+      <!-- ABOUT -->
+      <section class="about">
+        <div class="container">
+          <div class="about_content">
+            <div class="content_left title_small">
+              <p>ABOUST US</p>
+              <h3>
+                We make the best strategies for you, Enhancing your success
+              </h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex
+                ea.
+              </p>
+              <ul>
+                <li>
+                  <a href="/">
+                    <i class="fa fa-check-circle"></i> UI/UX Design and
+                    Development</a
+                  >
+                </li>
+                <li>
+                  <a href="/">
+                    <i class="fa fa-check-circle"></i> Branding Design and
+                    Identity</a
+                  >
+                </li>
+                <li>
+                  <a href="/">
+                    <i class="fa fa-check-circle"></i> Mobile App Design and
+                    Development</a
+                  >
+                </li>
               </ul>
+            </div>
+            <div class="content_right">
+              <div class="img_big col-6">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/a.jpg"
+                  alt=""
+                  class="radius-image img-fluid"
+                />
+              </div>
+
+              <div class="img_small col-6">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c1.jpg"
+                  alt=""
+                  class="radius-image img-fluid mb-md-3 mb-2"
+                />
+
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c4.jpg"
+                  alt=""
+                  class="radius-image img-fluid mt-md-3"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- feature -->
+
+      <section class="feature">
+        <div class="container">
+          <div class="feature_content">
+            <div class="content_left title_small">
+              <p>EVERY DAY BRINGS NEW CHALLENGES</p>
+              <h3>Creative agency focused on vision, product and people</h3>
+              <p>
+                Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies
+                nisi ac sed, lacinia est. Quisque ut lectus consequat, venenatis
+                eros et, sed commodo risus. Nullam sit amet laoreet elit.
+                Suspendisse non init magnaa velit efficitur, dolor eget ex
+                fermentum.
+              </p>
+              <a href="/">Discover More</a>
+            </div>
+
+            <div class="content_right">
+              <div class="content_item">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="/">
+                  <h4>Our Process</h4>
+                </a>
+              </div>
+              <div class="content_item">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="/">
+                  <h4>How We Help</h4>
+                </a>
+              </div>
+              <div class="content_item">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon3.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="/">
+                  <h4>UI/UX Design</h4>
+                </a>
+              </div>
+              <div class="content_item">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon4.png"
+                  alt=""
+                  class="img-fluid"
+                />
+                <a href="/">
+                  <h4>Creative Ideas</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Service -->
+      <section class="service">
+        <div class="container">
+          <div class="title_small">
+            <h3>Always there for your care, our Services</h3>
+          </div>
+          <div class="service_content">
+            <div class="service_item">
+              <a href="/">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s1.jpg"
+                  alt=""
+                  class="img-fluid service-image"
+                />
+              </a>
+
+              <div class="item_info">
+                <a href="">Work Expertise</a>
+                <p>
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+              </div>
+              <div class="learn_more">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+
+            <div class="service_item">
+              <a href="/">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s2.jpg"
+                  alt=""
+                  class="img-fluid service-image"
+                />
+              </a>
+
+              <div class="item_info">
+                <a href="">Product Development</a>
+                <p>
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+              </div>
+              <div class="learn_more">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="service_item active">
+              <a href="/">
+                <img
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s3.jpg"
+                  alt=""
+                  class="img-fluid service-image"
+                />
+              </a>
+
+              <div class="item_info">
+                <a href="">Software Development</a>
+                <p>
+                  Venenatis eros et, sed commodo risus. Nullam sit amet laoreet
+                  elit..
+                </p>
+              </div>
+              <div class="learn_more">
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUR GALLERY -->
+      <section class="gallery">
+        <div class="container">
+          <div class="title_small">
+            <p>OUR GALLERY</p>
+            <h3>Successful projects we've done</h3>
+          </div>
+
+          <div class="gallery_content">
+            <div class="gallery_item">
+              <a href="#">
+                <img
+                  class="card-img-bottom d-block"
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c1.jpg"
+                  alt="Card image cap"
+                />
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#">
+                <img
+                  class="card-img-bottom d-block"
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c2.jpg"
+                  alt="Card image cap"
+                />
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#">
+                <img
+                  class="card-img-bottom d-block"
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c3.jpg"
+                  alt="Card image cap"
+                />
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#">
+                <img
+                  class="card-img-bottom d-block"
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c4.jpg"
+                  alt="Card image cap"
+                />
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#">
+                <img
+                  class="card-img-bottom d-block"
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c5.jpg"
+                  alt="Card image cap"
+                />
+              </a>
+            </div>
+            <div class="gallery_item">
+              <a href="#">
+                <img
+                  class="card-img-bottom d-block"
+                  src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c6.jpg"
+                  alt="Card image cap"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="company-logos border-top">
+            <div class="company">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand1.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="company">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand6.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="company">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand3.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="company">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand4.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+            <div class="company">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand5.png"
+                alt=""
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SUCCESS -->
+      <section class="success">
+        <div class="container">
+          <div class="success_content">
+            <div class="content_left col-6">
+              <img
+                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/about.jpg"
+                alt=""
+                class="radius-image img-fluid"
+              />
+            </div>
+            <div class="content_right col-6">
+              <div class="title_small">
+                <p>YOUR SUCCESS IS OUR SUCCESS</p>
+                <h3>Web design, marketing & SEO solutions that get results</h3>
+              </div>
+              <div class="progress-info info1">
+                <h6 class="progress-tittle">
+                  Marketing <span class="">80%</span>
+                </h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped gradient-1"
+                    role="progressbar"
+                    style="width: 80%"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress-info info2">
+                <h6 class="progress-tittle">
+                  Responsive Web design <span class="">95%</span>
+                </h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped gradient-2"
+                    role="progressbar"
+                    style="width: 95%"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress-info info3">
+                <h6 class="progress-tittle">
+                  Analytics <span class="">60%</span>
+                </h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped gradient-3"
+                    role="progressbar"
+                    style="width: 60%"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="progress-info info4 mb-0">
+                <h6 class="progress-tittle">
+                  Web Development <span class="">85%</span>
+                </h6>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-striped gradient-4"
+                    role="progressbar"
+                    style="width: 85%"
+                    aria-valuenow="85"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Testimonials -->
+      <section class="testimonial">
+        <div class="container">
+          <div class="title_small">
+            <p>HAPPY CLIENTS FEEDBACK</p>
+            <h3>Reviews and Testimonials</h3>
+          </div>
+           <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="testimonial_table">
+            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!.</p>
+             <div class="testimonial_row">
+              <div class="test-img"><img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team3.jpg" class="img-fluid" alt="client-img">
+               
+                
+              </div>
+              <div class="testimonial_content">
+                <h3>Roy Linderson</h3>
+              <p class="indentity">Student</p>
+              </div>
+             </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial_table">
+            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!.</p>
+              <div class="testimonial_row">
+                <div class="test-img"><img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team4.jpg" class="img-fluid" alt="client-img">
+                
+                </div>
+                <div class="testimonial_content">
+                  <h3>Roy Linderson</h3>
+                <p class="indentity">Student</p>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial_table">
+            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!.</p>
+              <div class="testimonial_row">
+                <div class="test-img"><img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team1.jpg" class="img-fluid" alt="client-img">
+                
+                </div>
+                <div class="testimonial_content">
+                  <h3>Roy Linderson</h3>
+                <p class="indentity">Student</p>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="testimonial_table">
+            <p>Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+              voluptate rem ullam dolore nisi voluptatibus esse quasi, doloribus tempora.
+              Dolores molestias adipisci dolo amet!.</p>
+              <div class="testimonial_row">
+                <div class="test-img"><img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/team2.jpg" class="img-fluid" alt="client-img">
+                
+                </div>
+                <div class="testimonial_content">
+                  <h3>Roy Linderson</h3>
+                <p class="indentity">Student</p>
+                </div>
+              </div>
+              
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+        </div>
+      </section>
+
+      <!-- NEWS -->
+      <section class="new">
+        <div class="container">
+          <div class="title_small">
+            <p>LATEST NEWS</p>
+            <h3>Our insight and articles</h3>
+          </div>
+
+          <div class="row">
+            <div class="item col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card_header">
+                  <a href="#">
+                    <img
+                      width="556"
+                      height="371"
+                      src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg"
+                      class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                      alt=""
+                      loading="lazy"
+                      srcset="
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg         556w,
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-300x200.jpg 300w,
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-360x240.jpg 360w
+                      "
+                      sizes="(max-width: 556px) 100vw, 556px"
+                    />
+                  </a>
+                </div>
+                <div class="card_body active">
+                  <div class="review">
+                    <p>
+                      <a href="#">Startup Business</a>
+                    </p>
+                  </div>
+                  <a href="#">Hello World!</a>
+                </div>
+                <div class="card_footer">
+                  <div class="author">
+                    <a href="#">
+                      <img
+                        src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
+                        alt=""
+                        class="img-fluid rounded-circle"
+                      />
+                    </a>
+                    <div class="meta">
+                      <span>by</span>
+                      <a href="#"> W3Layouts </a>
+                    </div>
+                    <div class="date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="item col-md-6 col-lg-4">
+              <div class="card">
+                <div class="card_header">
+                  <a href="#">
+                    <img
+                      width="555"
+                      height="370"
+                      src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg"
+                      class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                      alt=""
+                      loading="lazy"
+                      srcset="
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg         555w,
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-300x200.jpg 300w,
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-360x240.jpg 360w
+                      "
+                      sizes="(max-width: 555px) 100vw, 555px"
+                    />
+                  </a>
+                </div>
+                <div class="card_body">
+                  <div class="review">
+                    <p>
+                      <a href="#">Startup Business</a>
+                    </p>
+                  </div>
+                  <a href="#">
+                    Companies in NY launched a joint project on a three-tower
+                    hall</a
+                  >
+                </div>
+                <div class="card_footer">
+                  <div class="author">
+                    <a href="#">
+                      <img
+                        src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
+                        alt=""
+                        class="img-fluid rounded-circle"
+                      />
+                    </a>
+                    <div class="meta">
+                      <span>by</span>
+                      <a href="#"> W3Layouts </a>
+                    </div>
+                    <div class="date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-md-6 col-lg-4 active">
+              <div class="card">
+                <div class="card_header">
+                  <a href="#">
+                    <img
+                      width="555"
+                      height="370"
+                      src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg"
+                      class="attachment-post-thumbnail size-post-thumbnail wp-post-image"
+                      alt=""
+                      loading="lazy"
+                      srcset="
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg         555w,
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-300x200.jpg 300w,
+                        https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-360x240.jpg 360w
+                      "
+                      sizes="(max-width: 555px) 100vw, 555px"
+                    />
+                  </a>
+                </div>
+                <div class="card_body">
+                  <div class="review">
+                    <p>
+                      <a href="#">Marketing Strategy</a>
+                    </p>
+                  </div>
+                  <a href="#">
+                    Design breakthrough upgrades the product and ready to
+                    launch</a
+                  >
+                </div>
+                <div class="card_footer">
+                  <div class="author">
+                    <a href="#">
+                      <img
+                        src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
+                        alt=""
+                        class="img-fluid rounded-circle"
+                      />
+                    </a>
+                    <div class="meta">
+                      <span>by</span>
+                      <a href="#"> W3Layouts </a>
+                    </div>
+                    <div class="date">
+                      <p>April 1, 2021</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Letter -->
+      <section class="letter">
+        <div class="container py-md-5 py-sm-4 py-2 HomePageNewsletter">
+          <div class="bottom-info">
+            <div class="header-section text-center">
+              <h3 class="title-big">Let’s find out how to work together</h3>
+              <p class="mt-3 pr-lg-5">
+                Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore
+                nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+              </p>
+            </div>
+            <form action="" class="subscribe mt-5" method="post">
+              <div class="input-group-text">
+                <span class="fa fa-paper-plane"></span>
+              </div>
+              <input
+                type="email"
+                name="email"
+                placeholder="Your Email Address"
+                required=""
+              />
+              <button class="btn btn-style btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer_content">
+        <div class="footer_crop">
+          <a class="navbar-brand d-flex justify-content-start" href="#">
+            <span>
+              <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
+            </span>
+
+            <div class="navbar_content text-center">
+              <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
+              <p class="text-white fw-bolder">Vision to your Future</p>
+            </div>
+          </a>
+          <p>
+            Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+            in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper
+            at elit team advisors.
+          </p>
+          <ul>
+            <li>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
             </li>
-            <li class="nav-item me-1">
-              <a class="  nav-link   fw-semibold " href="./html/contact.html">CONTACT</a>
+            <li>
+              <a href=""><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
             </li>
           </ul>
-          <button class=" btn  rounded-circle btn_header" btn_header type="submit">
-            <i class="fa fa-search "></i>
-          </button>
-          <button class="dark_more" onclick="dark()" id="dark_light">
-            <i class="fa fa-moon"></i>
-          </button>
+        </div>
+        <div class="footer_contact">
+          <h3>CONTACT INFO</h3>
+          <ul>
+            <li>
+              <p>
+                Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+                street, NY - 62617.
+              </p>
+            </li>
+            <li>
+              <p>Phone Number :<a href="">+1(21) 234 4567</a></p>
+            </li>
+            <li>
+              <p>Email :<a class="active" href=""> info@example.com</a></p>
+            </li>
+            <li>
+              <p>Support :<a class="active" href=""> info@support.com</a></p>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_categories">
+          <h3>CATEGORIES</h3>
+          <ul>
+            <li><a href="">Marketing Strategy</a></li>
+            <li><a href="">Startup Business</a></li>
+            <li><a href="">Web development</a></li>
+          </ul>
+        </div>
+        <div class="footer_meta">
+          <h3>META</h3>
+          <ul>
+            <li><a href="">Log in</a></li>
+            <li><a href="">Entries feed</a></li>
+            <li><a href="">Comments feed</a></li>
+            <li><a href="">WordPress.org</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
-  </header>
-  <!-- main -->
-  <main>
-    <section class="carousel">
-      <div id="carouselExampleControls" class="carousel slide carousel-fade" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active" data-bs-interval="3500">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b1.jpg"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h2> We will solve your issues our vision to your future</h2>
-              <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
-                dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-              <button>Learn more</button>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b2.jpg"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>Embracing success do our best, need best advice </h2>
-              <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
-                dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-              <button>Get Started</button>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b3.jpg"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h2> Digital transformation driven by technology</h2>
-              <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
-                dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-              <button>Contact Now</button>
-            </div>
-          </div>
-          <div class="carousel-item" data-bs-interval="3500">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/b4.jpg"
-              class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h2>For those who believe in leaving a mark</h2>
-              <p>Lorem ipsum dolor sit amet, elit, sed do eiusmod ut labore et
-                dolore <br> magna aliqua. Ut enim ad minim veniam, quis nisi ut ea. </p>
-              <button>Learn more</button>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" style="box-shadow: 0 0 15px gray;" type="button"
-          data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span aria-hidden="true">
-            <i class="fa fa-arrow-left"></i>
-          </span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" style="box-shadow: 0 0 15px gray;" type="button"
-          data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span aria-hidden="true">
-            <i class="fa fa-arrow-right"></i>
-          </span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="shape">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 280">
-            <path fill-opacity="1">
-              <animate attributeName="d" dur="20000ms" repeatCount="indefinite"
-                values="M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z; M0,160L48,181.3C96,203,192,245,288,234.7C384,224,480,160,576,133.3C672,107,768,117,864,138.7C960,160,1056,192,1152,197.3C1248,203,1344,181,1392,170.7L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;												 M0,64L48,74.7C96,85,192,107,288,133.3C384,160,480,192,576,170.7C672,149,768,75,864,80C960,85,1056,171,1152,181.3C1248,192,1344,128,1392,96L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;
-                  M0,160L48,181.3C96,203,192,245,288,261.3C384,277,480,267,576,234.7C672,203,768,149,864,117.3C960,85,1056,75,1152,90.7C1248,107,1344,149,1392,170.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z;">
-              </animate>
-            </path>
-          </svg>
-          <div class="carousel_backgroud"></div>
-        </div>
+      <div class="footer_tilte">
+        <p>© 2022 Corp Vision All Rights Reserved</p>
+        <div class="footer_title_shape"></div>
+        <p>WordPress Theme by <span>W3Layouts.</span></p>
       </div>
+      <button id="top" style="display: block" onclick=" topFunction()">
+        <span class="fa fa-angle-up"></span>
+      </button>
 
-    </section>
-    <!-- ABOUT -->
-    <section class="about">
-      <div class="container">
-        <div class="about_content">
-          <div class="content_left title_small">
-            <p>ABOUST US</p>
-            <h3>We make the best strategies for you, Enhancing your success</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud ullamco laboris nisi ut ex ea.</p>
+      <div class="sidebar">
+        <button
+          id="sidebar_btn"
+          onclick="sidebar()"
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+        >
+          <i class="fa fa-angle-double-left"></i>
+        </button>
+
+        <div
+          class="offcanvas offcanvas-end"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+        >
+          <div class="offcanvas-header">
             <ul>
-              <li><a href="/"> <i class="fa fa-check-circle"></i> UI/UX Design and Development</a></li>
-              <li><a href="/"> <i class="fa fa-check-circle"></i> Branding Design and Identity</a></li>
-              <li><a href="/"> <i class="fa fa-check-circle"></i> Mobile App Design and Development</a></li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-arrow-left"></i> <span>Back</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-download"></i><span>Download</span></a
+                >
+              </li>
+              <li>
+                <a href=""
+                  ><i class="fa fa-shopping-cart"></i><span>Buy</span></a
+                >
+              </li>
             </ul>
           </div>
-          <div class="content_right">
-            <div class="img_big col-6">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/a.jpg" alt=""
-                class="radius-image img-fluid">
-            </div>
-
-            <div class="img_small col-6">
-
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c1.jpg" alt=""
-                class="radius-image img-fluid mb-md-3 mb-2">
-
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c4.jpg" alt=""
-                class="radius-image img-fluid mt-md-3">
-            </div>
-          </div>
         </div>
       </div>
-    </section>
+    </footer>
+    <script src="./js/home.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-    <!-- feature -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 
-    <section class="feature">
-      <div class="container">
-        <div class="feature_content">
-          <div class="content_left title_small">
-            <p>EVERY DAY BRINGS NEW CHALLENGES</p>
-            <h3>Creative agency focused on vision, product and people</h3>
-            <p>Aurabitur id gravida risus. Fusce eget ex fermentum, ultricies nisi ac sed, lacinia est. Quisque ut
-              lectus
-              consequat, venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit. Suspendisse non init magnaa
-              velit efficitur, dolor eget ex fermentum.</p>
-            <a href="/">Discover More</a>
-          </div>
-
-          <div class="content_right">
-            <div class="content_item">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon1.png" alt=""
-                class="img-fluid">
-              <a href="/">
-                <h4>Our Process</h4>
-              </a>
-            </div>
-            <div class="content_item">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon2.png" alt=""
-                class="img-fluid">
-              <a href="/">
-                <h4>How We Help</h4>
-              </a>
-            </div>
-            <div class="content_item">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon3.png" alt=""
-                class="img-fluid">
-              <a href="/">
-                <h4>UI/UX Design</h4>
-              </a>
-            </div>
-            <div class="content_item">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/icon4.png" alt=""
-                class="img-fluid">
-              <a href="/">
-                <h4>Creative Ideas</h4>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Service -->
-    <section class="service">
-      <div class="container">
-        <div class="title_small">
-          <h3>Always there for your care, our Services</h3>
-        </div>
-        <div class="service_content">
-          <div class="service_item">
-            <a href="/">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s1.jpg" alt=""
-                class="img-fluid service-image">
-            </a>
-
-            <div class="item_info">
-              <a href="">Work Expertise</a>
-              <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
-            </div>
-            <div class="learn_more">
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-
-
-          <div class="service_item">
-            <a href="/">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s2.jpg" alt=""
-                class="img-fluid service-image">
-            </a>
-
-            <div class="item_info">
-              <a href="">Product Development</a>
-              <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
-            </div>
-            <div class="learn_more">
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-          <div class="service_item">
-            <a href="/">
-              <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/s3.jpg" alt=""
-                class="img-fluid service-image">
-            </a>
-
-            <div class="item_info">
-              <a href="">Software Development</a>
-              <p>Venenatis eros et, sed commodo risus. Nullam sit amet laoreet elit..</p>
-            </div>
-            <div class="learn_more">
-              <a href="#">Learn More</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- OUR GALLERY -->
-    <section class="gallery">
-      <div class="container">
-        <div class="title_small">
-          <p>OUR GALLERY</p>
-          <h3>Successful projects we've done</h3>
-        </div>
-
-        <div class="gallery_content">
-          <div class="gallery_item">
-            <a href="#">
-              <img class="card-img-bottom d-block"
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c1.jpg"
-                alt="Card image cap">
-            </a>
-          </div>
-          <div class="gallery_item">
-            <a href="#">
-              <img class="card-img-bottom d-block"
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c2.jpg"
-                alt="Card image cap">
-            </a>
-          </div>
-          <div class="gallery_item">
-            <a href="#">
-              <img class="card-img-bottom d-block"
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c3.jpg"
-                alt="Card image cap">
-            </a>
-          </div>
-          <div class="gallery_item">
-            <a href="#">
-              <img class="card-img-bottom d-block"
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c4.jpg"
-                alt="Card image cap">
-            </a>
-          </div>
-          <div class="gallery_item">
-            <a href="#">
-              <img class="card-img-bottom d-block"
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c5.jpg"
-                alt="Card image cap">
-            </a>
-          </div>
-          <div class="gallery_item">
-            <a href="#">
-              <img class="card-img-bottom d-block"
-                src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/c6.jpg"
-                alt="Card image cap">
-            </a>
-          </div>
-        </div>
-        <div class="company-logos border-top">
-          <div class="company">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand1.png" alt=""
-              class="img-fluid">
-          </div>
-          <div class="company">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand6.png" alt=""
-              class="img-fluid">
-          </div>
-          <div class="company">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand3.png" alt=""
-              class="img-fluid">
-          </div>
-          <div class="company">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand4.png" alt=""
-              class="img-fluid">
-          </div>
-          <div class="company">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/brand5.png" alt=""
-              class="img-fluid">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SUCCESS -->
-    <section class="success">
-      <div class="container">
-        <div class="success_content">
-          <div class="content_left col-6">
-            <img src="https://wp.w3layouts.com/corpvision/wp-content/themes/corpvision/assets/images/about.jpg" alt=""
-              class="radius-image img-fluid">
-          </div>
-          <div class="content_right col-6">
-            <div class="title_small">
-              <p>YOUR SUCCESS IS OUR SUCCESS</p>
-              <h3>Web design, marketing & SEO solutions that get results</h3>
-            </div>
-            <div class="progress-info info1">
-              <h6 class="progress-tittle">
-                Marketing <span class="">80%</span></h6>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped gradient-1" role="progressbar" style="width: 80%"
-                  aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
-
-                </div>
-
-              </div>
-            </div>
-
-            <div class="progress-info info2">
-              <h6 class="progress-tittle">
-                Responsive Web design <span class="">95%</span>
-              </h6>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped gradient-2" role="progressbar" style="width: 95%"
-                  aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-info info3">
-              <h6 class="progress-tittle">
-                Analytics <span class="">60%</span></h6>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped gradient-3" role="progressbar" style="width: 60%"
-                  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress-info info4 mb-0">
-              <h6 class="progress-tittle">
-                Web Development <span class="">85%</span></h6>
-              <div class="progress">
-                <div class="progress-bar progress-bar-striped gradient-4" role="progressbar" style="width: 85%"
-                  aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="testimonial">
-      <div class="container">
-        <div class="title_small">
-          <p>HAPPY CLIENTS FEEDBACK</p>
-          <h3>Reviews and Testimonials</h3>
-        </div>
-
-
-      </div>
-    </section>
-
-    <!-- NEWS -->
-    <section class="new">
-      <div class="container">
-        <div class="title_small">
-          <p>LATEST NEWS</p>
-          <h3>Our insight and articles</h3>
-        </div>
-
-        <div class="row">
-          <div class="item col-md-6 col-lg-4">
-            <div class="card">
-              <div class="card_header">
-                <a href="#">
-                  <img width="556" height="371"
-                    src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg"
-                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
-                    srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1.jpg 556w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog1-360x240.jpg 360w"
-                    sizes="(max-width: 556px) 100vw, 556px">
-                </a>
-              </div>
-              <div class="card_body active">
-                <div class="review">
-                  <p>
-                    <a href="#">Startup Business</a>
-                  </p>
-                </div>
-                <a href="#">Hello World!</a>
-              </div>
-              <div class="card_footer">
-                <div class="author">
-                  <a href="#">
-                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
-                      alt="" class="img-fluid rounded-circle">
-                  </a>
-                  <div class="meta">
-                    <span>by</span>
-                    <a href="#">
-                      W3Layouts
-                    </a>
-                  </div>
-                  <div class="date">
-                    <p>April 1, 2021</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="item col-md-6 col-lg-4">
-            <div class="card">
-              <div class="card_header">
-                <a href="#">
-                  <img width="555" height="370"
-                    src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg"
-                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
-                    srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2.jpg 555w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog2-360x240.jpg 360w"
-                    sizes="(max-width: 555px) 100vw, 555px">
-                </a>
-              </div>
-              <div class="card_body">
-                <div class="review">
-                  <p>
-                    <a href="#">Startup Business</a>
-                  </p>
-                </div>
-                <a href="#">
-                  Companies in NY launched a joint project on a three-tower hall</a>
-              </div>
-              <div class="card_footer">
-                <div class="author">
-                  <a href="#">
-                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
-                      alt="" class="img-fluid rounded-circle">
-                  </a>
-                  <div class="meta">
-                    <span>by</span>
-                    <a href="#">
-                      W3Layouts
-                    </a>
-                  </div>
-                  <div class="date">
-                    <p>April 1, 2021</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-       <div class="item col-md-6 col-lg-4">
-            <div class="card">
-              <div class="card_header">
-                <a href="#">
-                  <img width="555" height="370"
-                    src="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg"
-                    class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" loading="lazy"
-                    srcset="https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3.jpg 555w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-300x200.jpg 300w, https://wp.w3layouts.com/corpvision/wp-content/uploads/sites/38/2021/04/blog3-360x240.jpg 360w"
-                    sizes="(max-width: 555px) 100vw, 555px">
-                </a>
-              </div>
-              <div class="card_body">
-                <div class="review">
-                  <p>
-                    <a href="#">Marketing Strategy</a>
-                  </p>
-                </div>
-                <a href="#">
-                  Design breakthrough upgrades the product and ready to launch</a>
-              </div>
-              <div class="card_footer">
-                <div class="author">
-                  <a href="#">
-                    <img src="https://secure.gravatar.com/avatar/328cc1f23e4a3b73aa60ee6ced1897a1?s=40&amp;d=mm&amp;r=g"
-                      alt="" class="img-fluid rounded-circle">
-                  </a>
-                  <div class="meta">
-                    <span>by</span>
-                    <a href="#">
-                      W3Layouts
-                    </a>
-                  </div>
-                  <div class="date">
-                    <p>April 1, 2021</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Letter -->
-    <section class="letter">
-      <div class="container py-md-5 py-sm-4 py-2 HomePageNewsletter">
-          <div class="bottom-info">
-              <div class="header-section text-center">
-                  <h3 class="title-big">Let’s find out how to work together</h3>
-                  <p class="mt-3 pr-lg-5">Lorem ipsum dolor sit amet elit. Velit beatae
-                      rem ullam dolore nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.</p>
-              </div>
-              <form action="" class="subscribe mt-5" method="post">
-                  <div class="input-group-text"><span class="fa fa-paper-plane"></span></div>
-                  <input type="email" name="email" 
-                  placeholder="Your Email Address" required="">
-                  <button class="btn btn-style btn-primary">Subscribe</button>
-                </form>
-          </div>
-      </div>
-    </section>
-
-  </main>
-
-
-  <!-- footer -->
-  <footer>
-    <div class="footer_content">
-      <div class="footer_crop">
-        <a class="navbar-brand d-flex justify-content-start " href="#">
-          <span>
-            <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
-          </span>
-
-          <div class="navbar_content text-center">
-            <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
-            <p class="text-white fw-bolder ">Vision to your Future</p>
-          </div>
-        </a>
-        <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at tempufddfel. Lorem
-          ipsum dolor sit amet Semper at elit team advisors.</p>
-        <ul>
-          <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href=""><i class="fab fa-twitter"></i></a></li>
-          <li><a href=""><i class="fab fa-instagram"></i></a></li>
-          <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-        </ul>
-      </div>
-      <div class="footer_contact">
-        <h3>CONTACT INFO</h3>
-        <ul>
-          <li>
-            <p>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
-          </li>
-          <li>
-            <p>Phone Number :<a href="">+1(21) 234 4567</a></p>
-          </li>
-          <li>
-            <p>Email :<a class="active" href=""> info@example.com</a></p>
-          </li>
-          <li>
-            <p>Support :<a class="active" href=""> info@support.com</a></p>
-          </li>
-        </ul>
-      </div>
-      <div class="footer_categories">
-        <h3>CATEGORIES</h3>
-        <ul>
-          <li><a href="">Marketing Strategy</a></li>
-          <li><a href="">Startup Business</a></li>
-          <li><a href="">Web development</a></li>
-        </ul>
-      </div>
-      <div class="footer_meta">
-        <h3>META</h3>
-        <ul>
-          <li><a href="">Log in</a></li>
-          <li><a href="">Entries feed</a></li>
-          <li><a href="">Comments feed</a></li>
-          <li><a href="">WordPress.org</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer_tilte">
-      <p>© 2022 Corp Vision All Rights Reserved</p>
-      <div class="footer_title_shape"></div>
-      <p>WordPress Theme by <span>W3Layouts.</span></p>
-    </div>
-    <button id="top" style="display: block ;" onclick=" topFunction()">
-      <span class="fa fa-angle-up"></span></button>
-
-      
-      <div class="sidebar">
-        <button id="sidebar_btn" onclick="sidebar()" class="btn  " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling"><i class="fa fa-angle-double-left"></i></button>
-
-      <div class="offcanvas offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-        <div class="offcanvas-header">
-          <ul>
-            <li><a href=""><i class="fa fa-arrow-left"></i> <span>Back</span></a></li>
-            <li><a href=""><i class="fa fa-download"></i><span>Download</span></a></li>
-            <li><a href=""><i class="fa fa-shopping-cart"></i><span>Buy</span></a></li>
-          </ul>
-
-        </div>
-      
-      </div>
-      </div>
-      
-  </footer>
- 
-  <script src="./js/home.js"></script>
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
     </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
-    </script>
-</body>
+  </body>
+</html>

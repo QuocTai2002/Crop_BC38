@@ -357,3 +357,37 @@ main .carousel .carousel-item .carousel-caption {
   opacity: 0.8;
   margin-top: 25px;
 }
+@media screen and (max-width:981px) {
+  .design_row {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .solution_row {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .desgin_item.icon {
+    padding-bottom: 25px;
+  }
+  .form_container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .form_content, .form_row {
+    width: 100%;
+  }
+  .service_row {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width:771px) {
+  .carousel,.carousel-item img {
+    height: 386px;
+  }
+  .solution_row {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .service_row {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+}

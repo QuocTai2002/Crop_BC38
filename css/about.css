@@ -545,3 +545,134 @@ main .carousel .carousel-item .carousel-caption {
     margin-left: 5px;
 }
 
+@media screen and (max-width:1250px) {
+    .about_container,.design_container {
+   max-width:  90%;
+}
+
+}
+@media screen and (max-width:1120px) {
+
+    .about_row .about_img,.about_row .about_content,.design_content {
+        width: 40%;
+    }
+    .design_container {
+        justify-content: space-between;
+    }
+    .design_img_2,.design_img_1 {
+        margin: 0;
+    }
+    .offcanvas-header{
+        padding: unset;
+        display: block;
+    }
+}
+@media screen and (max-width:991px) {
+    .about .about_img img{
+        position: unset;
+        transform: translateY(-501px);
+    }
+    .about_row{
+        flex-wrap: wrap;
+    }
+    .about_year{
+        top: 52%;
+        bottom: unset;
+        right: 33%;
+    }
+    .about_row .about_img, .about_row .about_content{
+        width: 100%;
+        height: 590px;
+    }
+    .about .about_img .about_shape {
+        position: unset;
+    }
+    .about_valuate{
+        margin-top: 0;
+    }
+    .about_valuate{
+        grid-template-columns: repeat(2,1fr );
+    }
+    .design_container{
+        display: block;
+    }
+    .design_content {
+        width: 100%;
+    }
+    .design_img_2, .design_img_1 {
+        width: 40%;
+    }
+    .design_img_2{
+        margin-left: 150px;
+    }
+    .team_img {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .choose_item {
+        width: 100%;
+    }
+    .get_start_container{
+        flex-wrap: wrap;
+    }
+    .get_start_content,.get_start_container .button{
+        width: 100%;
+    }
+    .get_start_container .button{
+        text-align: unset;
+    }
+}
+@media screen  and (max-width:861px){
+    .about_container, .design_container{
+        width:70% ;
+    }
+    .about_year{
+        right: 2%;
+    }
+    .design_img_2{
+        margin-left:100px
+    }
+    .team_conntainer{
+        max-width: unset;
+        width: 90%;
+    }
+}
+@media screen  and (max-width:770px){
+    main .carousel .carousel-item{
+        height: 551px;
+    }
+    .about_container, .design_container{
+      width: 90%;  
+    }
+    .about .about_img img{
+        width: 440px;
+    }
+    .about .about_img .about_shape {
+width: 420px;
+height: 502px;
+    }
+    .about_year{
+        right: 24%;
+    }
+   
+}
+@media screen  and (max-width:580px) {
+    .design_img_2{
+        margin-left: 30px;
+    }
+    .about_year{
+        width: 150px;
+        height: 150px;
+    }
+    .about_rotate p{
+        font-size: 30px;
+    }
+    .about_year .about_rotate p span{
+        font-size: 15px;
+    }
+    main .carousel .carousel-item{
+        height: 450px;
+    }
+    .about_valuate {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
