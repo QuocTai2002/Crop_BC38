@@ -17,9 +17,33 @@ main .carousel .carousel-item {
 main .carousel .carousel-item .carousel-caption {
   top: 160px;
 }
+:root {
+    --pramry-color: white;
+    --text-seconde-color:#3f3a64;
+    --bg-carousel-color:rgba(29, 42, 55, 0.7);
+    --bg-color:#fff;
+    --control-color:#fff;
+    --font-color:#666;
+    --bg-gray:#f7f7f7;
+  
+  }
+  
+  .dark_them{
+    --pramry-color: #151421;
+    --text-seconde-color:white;
+    --bg-carousel-color:rgba(29, 42, 55, 0.8);
+    --bg-color:#151421;
+    --control-color:#fff;
+    --font-color:#c2c2c2;
+    --bg-gray:#100f19;
+  
+  }
+.about {
+    padding: 100px 0;
+}
 .about_container {
     max-width: 80%;
-    margin: 100px   auto;
+    margin: 0 auto;
 }
 .about_row .about_img {
     width: 50%;
@@ -38,6 +62,8 @@ main .carousel .carousel-item .carousel-caption {
 .about .about_img img {
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     box-shadow: 0 15px 38px 0 rgb(0 0 0 / 20%);
+    position: absolute;
+    z-index: 1;
 }
 .about .about_img .about_shape {
     width: 500px;
@@ -45,7 +71,6 @@ main .carousel .carousel-item .carousel-caption {
     background-color: #009f4d;
     opacity: .4;
     position: absolute;
-    z-index: -1;
     border-radius: 25% 70% 84% 22% / 42% 75% 25% 75%;
     box-shadow: 0 15px 38px 0 rgb(0 0 0 / 20%);
 }
@@ -53,22 +78,20 @@ main .carousel .carousel-item .carousel-caption {
     background-color: #009f4d ;
     width: 200px;
     height: 200px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     bottom: 0%;
     right: 20%;
     border-radius: 10px;
     transform: rotate(45deg);
-   
     box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
-    
 }
 .about_rotate {
     transform: rotate(-45deg);
     text-align: center;
 }
 .about_rotate p {
-    color: #fff;
+    color: white;
     line-height: 40px;
     font-weight: 600;
     font-size: 40px;
@@ -94,15 +117,15 @@ main .carousel .carousel-item .carousel-caption {
     font-size: 35px;
     line-height: 45px;
     font-weight: 700;
-    color: #3f3a64;
+    color: var(--text-seconde-color);
 }
 .about .about_content p:first-of-type {
-    color: #3f3a64;
+    color: var(--text-seconde-color);
     font-size: 22px;
     margin-top: 24px;
 }
 .about .about_content p:last-of-type {
-    color: #666;
+    color:var( --font-color);
     opacity: .8;
     font-size: 17px;
     line-height: 27px;
@@ -140,14 +163,14 @@ main .carousel .carousel-item .carousel-caption {
     
 }
 .about_item {
-    background-color: #f8f9fa;
+    background-color: var(--bg-gray);
     padding: 50px 35px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
 }
 .about_item  a h3 {
-    color: #3f3a64;
+    color: var(--text-seconde-color);
     margin-bottom: 15px;
     font-weight: 600;
     font-size: 22px;
@@ -158,7 +181,7 @@ main .carousel .carousel-item .carousel-caption {
 }
 .about_item p {
     font-size: 17px;
-    color: #666;
+    color: var(--font-color);
     opacity: .8;
     line-height: 27px;
     margin-bottom: 0;
@@ -171,7 +194,7 @@ main .carousel .carousel-item .carousel-caption {
    
 }
 .design {
-    background-color: #f8f9fa;
+    background-color: var(--bg-gray);
     padding: 48px 0;
 
 }
@@ -205,7 +228,7 @@ main .carousel .carousel-item .carousel-caption {
 
 }
 .design_content h2 {
-    color: #3f3a64;
+    color: var(--text-seconde-color);
     font-size: 34px;
     line-height: 45px;
     font-weight: 700;
@@ -227,14 +250,14 @@ main .carousel .carousel-item .carousel-caption {
     line-height: 28px;
     margin-bottom: 12px;
     font-weight: 600;
-    color: #3f3a64;
+    color: var(--text-seconde-color);
     margin-top: 15px;
     
 }
 .design_item p{
     font-size: 17px;
     line-height: 27px;
-    color: #666;
+    color: var(--font-color);
     opacity: .8;
     margin-right: 25px;
 }
@@ -253,7 +276,7 @@ main .carousel .carousel-item .carousel-caption {
 }
 .business::before{
     content: "";
-    background-color:rgba(29, 42, 55, 0.7)  ;
+    background-color:var(--bg-carousel-color)  ;
     top: 0;
     left: 0;
     right: 0;
@@ -285,6 +308,9 @@ main .carousel .carousel-item .carousel-caption {
     border-radius: 50%;
     border: solid white 3px;
 }
+.team{
+    background-color: var(--bg-color);
+}
 .team_conntainer {
     max-width: 80%;
     margin: 0 auto;
@@ -303,7 +329,7 @@ main .carousel .carousel-item .carousel-caption {
     line-height: 45px;
     font-weight: 700;
     padding-bottom: 48px;
-    color: #3f3a64;
+    color: var(--text-seconde-color);
 }
 .team_img {
     display: grid;
@@ -325,7 +351,7 @@ main .carousel .carousel-item .carousel-caption {
     margin-top: 25px;
     font-size: 20px;
     font-weight: 600;
-    color: #3f3a64;
+    color: var(--text-seconde-color);
 }
 .team_item h3:hover{
     color:#00a63f;
@@ -333,7 +359,7 @@ main .carousel .carousel-item .carousel-caption {
 .team_item p {
     font-size: 17px;
     line-height: 27px;
-    color: #666;
+    color: var(--font-color);
     opacity: .8;
 }
 .team_nar:hover .team_nar_title {
@@ -391,7 +417,7 @@ main .carousel .carousel-item .carousel-caption {
     background-color: rgba(20, 20, 20, 0.7);
 }
 .choose{
-    background-color: #f7f7f7;
+    background-color: var(--bg-gray);
     padding: 100px 0;
 }
 .choose_container {
@@ -411,7 +437,7 @@ main .carousel .carousel-item .carousel-caption {
     font-size: 35px;
     line-height: 45px;
     font-weight: 600;
-    color: #3f3a64;
+    color: var(--text-seconde-color);
 }
 .choose_item {
     width: 50%;
@@ -455,11 +481,11 @@ main .carousel .carousel-item .carousel-caption {
 .choose_content h3 {
     font-weight: 600;
     font-size: 24px;
-    color: #3f3a64;
+    color: var(--text-seconde-color);
 }
 .choose_content p {
     font-size: 17px;
-    color: #666;
+    color: var(--font-color);
     opacity: .8;
     line-height: 27px;
     letter-spacing: unset;
@@ -469,6 +495,10 @@ main .carousel .carousel-item .carousel-caption {
     display: flex;
     flex-wrap: wrap;
     margin-top: 40px;
+}
+.get_start{
+    background-color: var(--bg-color);
+    border-bottom: 1px solid rgb(153, 153, 153, 0.2);
 }
 .get_start_container{
     max-width: 80%;
@@ -484,12 +514,12 @@ main .carousel .carousel-item .carousel-caption {
     font-size: 35px;
     line-height: 45px;
     font-weight: 700;
-    color: #3f3a64;
+    color: var(--text-seconde-color);
 }
 .get_start_content p{
     font-size: 17px;
     line-height: 27px;
-    color: #666;
+    color: var(--font-color);
     opacity: .8;
 }
 .get_start_container .button{
@@ -515,3 +545,134 @@ main .carousel .carousel-item .carousel-caption {
     margin-left: 5px;
 }
 
+@media screen and (max-width:1250px) {
+    .about_container,.design_container {
+   max-width:  90%;
+}
+
+}
+@media screen and (max-width:1120px) {
+
+    .about_row .about_img,.about_row .about_content,.design_content {
+        width: 40%;
+    }
+    .design_container {
+        justify-content: space-between;
+    }
+    .design_img_2,.design_img_1 {
+        margin: 0;
+    }
+    .offcanvas-header{
+        padding: unset;
+        display: block;
+    }
+}
+@media screen and (max-width:991px) {
+    .about .about_img img{
+        position: unset;
+        transform: translateY(-501px);
+    }
+    .about_row{
+        flex-wrap: wrap;
+    }
+    .about_year{
+        top: 52%;
+        bottom: unset;
+        right: 33%;
+    }
+    .about_row .about_img, .about_row .about_content{
+        width: 100%;
+        height: 590px;
+    }
+    .about .about_img .about_shape {
+        position: unset;
+    }
+    .about_valuate{
+        margin-top: 0;
+    }
+    .about_valuate{
+        grid-template-columns: repeat(2,1fr );
+    }
+    .design_container{
+        display: block;
+    }
+    .design_content {
+        width: 100%;
+    }
+    .design_img_2, .design_img_1 {
+        width: 40%;
+    }
+    .design_img_2{
+        margin-left: 150px;
+    }
+    .team_img {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .choose_item {
+        width: 100%;
+    }
+    .get_start_container{
+        flex-wrap: wrap;
+    }
+    .get_start_content,.get_start_container .button{
+        width: 100%;
+    }
+    .get_start_container .button{
+        text-align: unset;
+    }
+}
+@media screen  and (max-width:861px){
+    .about_container, .design_container{
+        width:70% ;
+    }
+    .about_year{
+        right: 2%;
+    }
+    .design_img_2{
+        margin-left:100px
+    }
+    .team_conntainer{
+        max-width: unset;
+        width: 90%;
+    }
+}
+@media screen  and (max-width:770px){
+    main .carousel .carousel-item{
+        height: 551px;
+    }
+    .about_container, .design_container{
+      width: 90%;  
+    }
+    .about .about_img img{
+        width: 440px;
+    }
+    .about .about_img .about_shape {
+width: 420px;
+height: 502px;
+    }
+    .about_year{
+        right: 24%;
+    }
+   
+}
+@media screen  and (max-width:580px) {
+    .design_img_2{
+        margin-left: 30px;
+    }
+    .about_year{
+        width: 150px;
+        height: 150px;
+    }
+    .about_rotate p{
+        font-size: 30px;
+    }
+    .about_year .about_rotate p span{
+        font-size: 15px;
+    }
+    main .carousel .carousel-item{
+        height: 450px;
+    }
+    .about_valuate {
+        grid-template-columns: repeat(1,1fr);
+    }
+}

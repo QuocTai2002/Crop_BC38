@@ -17,8 +17,33 @@ main .carousel .carousel-item {
 main .carousel .carousel-item .carousel-caption {
   top: 160px;
 }
+:root {
+  --pramry-color: white;
+  --text-seconde-color:#3f3a64;
+  --bg-carousel-color:rgba(29, 42, 55, 0.7);
+  --bg-color:#fff;
+  --control-color:#fff;
+  --font-color:#666;
+  --bg-gray:#f7f7f7;
+  --item-color-sv:#f8f9fa;
+  --input-color:#f7f7f7;
+
+}
+
+.dark_them{
+  --pramry-color: #151421;
+  --text-seconde-color:white;
+  --bg-carousel-color:rgba(29, 42, 55, 0.8);
+  --bg-color:#151421;
+  --control-color:#fff;
+  --font-color:#c2c2c2;
+  --bg-gray:#100f19;
+  --item-color-sv:#100f19;
+  --input-color:#100f19;
+
+}
 .design {
-  background-color: #f7f7f7;
+  background-color: var(--bg-gray);
 }
 .design_container {
   max-width: 80%;
@@ -37,7 +62,7 @@ main .carousel .carousel-item .carousel-caption {
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
-  color: #3f3a64;
+  color: var(  --text-seconde-color);
 }
 .design_row {
   display: grid;
@@ -46,7 +71,7 @@ main .carousel .carousel-item .carousel-caption {
   margin-top: 50px;
 }
 .desgin_item {
-  background-color: white;
+  background-color: var(--bg-color);
 }
 .desgin_item.active img {
   width: 100%;
@@ -59,14 +84,14 @@ main .carousel .carousel-item .carousel-caption {
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
-  color: #3f3a64;
+  color: var(  --text-seconde-color);
   padding-bottom: 20px;
   padding-top: 10px;
 }
 .design_row p {
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  color: var(--font-color);
   opacity: 0.8;
   margin: 0 50px;
 }
@@ -82,6 +107,9 @@ main .carousel .carousel-item .carousel-caption {
 }
 .design_row button:hover {
   background-color: #20924c;
+}
+.solution{
+  background-color: var(--bg-color);
 }
 .solution_container {
   max-width: 80%;
@@ -101,7 +129,7 @@ main .carousel .carousel-item .carousel-caption {
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
-  color: #3f3a64;
+  color: var(  --text-seconde-color);
   margin-bottom: 50px;
 }
 .solution_row {
@@ -110,7 +138,7 @@ main .carousel .carousel-item .carousel-caption {
   gap: 25px;
 }
 .solution_item {
-  background-color: #f8f9fa;
+  background-color: var(--item-color-sv);
   border-radius: 8px;
 }
 .solution_icon {
@@ -127,7 +155,7 @@ main .carousel .carousel-item .carousel-caption {
 }
 .soluton_title a {
   display: block;
-  color: #3f3a64;
+  color: var(  --text-seconde-color);
   font-weight: 600;
   line-height: 1.2;
   margin-bottom: 15px;
@@ -141,7 +169,7 @@ main .carousel .carousel-item .carousel-caption {
 .soluton_title p {
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  color: var(--font-color);
   opacity: 0.8;
 }
 .form_container {
@@ -165,7 +193,7 @@ main .carousel .carousel-item .carousel-caption {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-color: rgba(29, 42, 55, 0.7);
+  background-color: var(--bg-carousel-color);
 }
 .form_content,
 .form_row {
@@ -213,6 +241,9 @@ main .carousel .carousel-item .carousel-caption {
   font-size: 18px;
   opacity: 0.8;
 }
+.form_row_titel{
+  background-color: var(--bg-color);
+}
 .form_row .form_row_titel {
   padding: 50px;
 }
@@ -220,20 +251,20 @@ main .carousel .carousel-item .carousel-caption {
   font-weight: 600;
   font-size: 28px;
   line-height: 34px;
-  color: #3f3a64;
+  color: var(  --text-seconde-color);
 }
 .form_row .form_row_titel p {
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  color: var(--font-color);
   opacity: 0.8;
   margin-bottom: 25px;
 }
 .form_row .form_row_titel input {
   margin-top: 25px;
   width: 100%;
-  background-color: #f7f7f7;
-  color: #666;
+  background-color: var(--input-color);
+  color: var(--font-color);
   font-size: 17px;
   border: none;
   padding: 15px 25px;
@@ -243,7 +274,7 @@ main .carousel .carousel-item .carousel-caption {
   margin-top: 25px;
   width: 100%;
   background-color: #f7f7f7;
-  color: #666;
+  background-color: var(--input-color);
   font-size: 17px;
   border: none;
 }
@@ -265,7 +296,8 @@ main .carousel .carousel-item .carousel-caption {
 .service {
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
+  background-color: var(--bg-gray);
+  border-bottom: 1px solid rgb(153, 153, 153, 0.2);
 }
 .service_container {
   max-width: 80%;
@@ -280,7 +312,7 @@ main .carousel .carousel-item .carousel-caption {
   font-size: 35px;
   line-height: 45px;
   font-weight: 700;
-  color: #3f3a64;
+  color: var(  --text-seconde-color);
 }
 .service .service_content p {
   font-size: 14px;
@@ -298,7 +330,7 @@ main .carousel .carousel-item .carousel-caption {
 }
 .service_item {
   padding: 40px 30px;
-  background-color: white;
+  background-color: var(--bg-color);
   border-radius: 8px;
   box-shadow: rgb(1 1 1 / 5%) 1px 1px 5px 0px;
   transition: all 0.5s;
@@ -313,7 +345,7 @@ main .carousel .carousel-item .carousel-caption {
   font-weight: 600;
   margin-top: 25px;
   transition: all 0.5s;
-  color: #3f3a64;
+  color: var(  --text-seconde-color);
 }
 .service_item h3:hover {
   color: #00a63f;
@@ -321,7 +353,41 @@ main .carousel .carousel-item .carousel-caption {
 .service_item p {
   font-size: 17px;
   line-height: 27px;
-  color: #666;
+  color: var(--font-color);
   opacity: 0.8;
   margin-top: 25px;
+}
+@media screen and (max-width:981px) {
+  .design_row {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .solution_row {
+    grid-template-columns: repeat(2,1fr);
+  }
+  .desgin_item.icon {
+    padding-bottom: 25px;
+  }
+  .form_container {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
+  .form_content, .form_row {
+    width: 100%;
+  }
+  .service_row {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media screen and (max-width:771px) {
+  .carousel,.carousel-item img {
+    height: 386px;
+  }
+  .solution_row {
+    grid-template-columns: repeat(1,1fr);
+  }
+  .service_row {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+  }
 }

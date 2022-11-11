@@ -1,3 +1,4 @@
+//header change bg
 let mybutton = document.getElementById("top");
 window.onscroll = function () {
   scrollFunction();
@@ -15,6 +16,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//buttonBuy
 var count = 1;
 function sidebar() {
   if (count == 0) {
@@ -27,33 +30,29 @@ function sidebar() {
     count = 0;
   }
 }
-
-let darkMode = localStorage.getItem('darkMode'); 
-
-const darkModeToggle = document.querySelector('#dark_light');
-
+ //darkMore
+let darkMode = localStorage.getItem("darkMode");
+const darkModeToggle = document.querySelector("#dark_light");
 const enableDarkMode = () => {
-  document.body.classList.add('dark_them');
-  localStorage.setItem('darkMode', 'enabled');
+  document.body.classList.add("dark_them");
+  localStorage.setItem("darkMode", "enabled");
   var icon = '<i class="fa fa-sun"></i>';
   document.getElementById("dark_light").innerHTML = icon;
-}
-
+};
 const disableDarkMode = () => {
-  document.body.classList.remove('dark_them');
-  localStorage.setItem('darkMode', null);
-
-    var icon2 = '<i class="fa fa-moon"></i>';
-    document.getElementById("dark_light").innerHTML = icon2;
-}
-if (darkMode === 'enabled') {
+  document.body.classList.remove("dark_them");
+  localStorage.setItem("darkMode", null);
+  var icon2 = '<i class="fa fa-moon"></i>';
+  document.getElementById("dark_light").innerHTML = icon2;
+};
+if (darkMode === "enabled") {
   enableDarkMode();
 }
-darkModeToggle.addEventListener('click', () => {
-  darkMode = localStorage.getItem('darkMode'); 
-  if (darkMode !== 'enabled') {
+darkModeToggle.addEventListener("click", () => {
+  darkMode = localStorage.getItem("darkMode");
+  if (darkMode !== "enabled") {
     enableDarkMode();
-  } else {  
-    disableDarkMode(); 
+  } else {
+    disableDarkMode();
   }
 });
