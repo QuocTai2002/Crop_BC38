@@ -12,64 +12,118 @@
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <!-- css style  -->
-    <link rel="stylesheet" href="./blog_post.css">
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../css/blog_post2.css">
+    
     <!-- sw -->
 </head>
 
 <body>
     <!-- HEADER -->
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid pt-1 ">
-                <a class="navbar-brand d-flex justify-content-start " href="#">
-                    <span>
-                        <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
-                    </span>
+   <!-- head -->
+   <header id="header">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid pt-1">
+          <a class="navbar-brand d-flex justify-content-start" href="#">
+            <span>
+              <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
+            </span>
 
-                    <div class="navbar_content text-center">
-                        <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
-                        <p class="text-white fw-bolder  text-opacity-75">Vision to your Future</p>
-                    </div>
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <div class="collapse navbar-collapse justify-content-around" id="navbarSupportedContent">
-                    <ul class="navbar-nav ">
-                        <li class="nav-item me-1">
-                            <a class="nav-link  active  fw-semibold " aria-current="page" href="#">HOME</a>
-                        </li>
-                        <li class="nav-item me-1">
-                            <a class="  nav-link  fw-semibold" href="#">ABOUT</a>
-                        </li>
-                        <li class="nav-item me-1">
-                            <a class="  nav-link   fw-semibold  " href="#">SERVICE</a>
-                        </li>
-                        <li class="nav-item dropdown me-1">
-                            <a class="  nav-link dropdown-toggle   fw-semibold" href="#" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                PAGES
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-secondary" href="#">BLOG POSTS</a></li>
-                                <li><a class="dropdown-item text-secondary" href="#">404 PAGE</a></li>
-                                <li><a class="dropdown-item text-secondary" href="#">LANDING PAGE</a></li>
-                                <li><a class="dropdown-item text-secondary" href="#">ELEMENTS PAGE</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item me-1">
-                            <a class="  nav-link   fw-semibold " href="#">CONTACT</a>
-                        </li>
-                    </ul>
-                    <button class=" btn btn-success rounded-circle" type="submit">
-                        <i class="fa fa-search "></i>
-                    </button>
-                </div>
-
+            <div class="navbar_content text-center">
+              <h2 class="fs-3 fw-bolder mb-0 mt-1 text_center_h2">
+                Crop Vision
+              </h2>
+              <p class="fw-bolder">Vision to your Future</p>
             </div>
-        </nav>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fa fa-bars"></i>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-around"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item me-1">
+                <a
+                  class="nav-link active fw-semibold"
+                  aria-current="page"
+                  href="./index.html"
+                  >HOME</a
+                >
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link fw-semibold" href="./html/about.html"
+                  >ABOUT</a
+                >
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link fw-semibold" href="./html/service.html"
+                  >SERVICE</a
+                >
+              </li>
+              <li class="nav-item dropdown me-1">
+                <a
+                  class="nav-link dropdown-toggle fw-semibold"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  PAGES
+                </a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item text-secondary" href="./blog_post.html"
+                      >BLOG POSTS</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-secondary" href="../404.html"
+                      >404 PAGE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-secondary" href="../learning.html"
+                      >LANDING PAGE</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-secondary" href="../element_page.html"
+                      >ELEMENTS PAGE</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item me-1">
+                <a class="nav-link fw-semibold" href="./html/contact.html"
+                  >CONTACT</a
+                >
+              </li>
+            </ul>
+            <div class="btn_navbar">
+              <button
+                class="btn rounded-circle btn_header"
+                btn_header
+                type="submit"
+              >
+                <i class="fa fa-search"></i>
+              </button>
+              <button class="dark_more" onclick="dark()" id="dark_light">
+                <i class="fa fa-moon"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <!-- CAROUSEL -->
@@ -172,72 +226,155 @@
             </div>
             </div>
     </section>
+    
     <!-- footer -->
     <footer>
         <div class="footer_content">
-            <div class="footer_crop">
-                <a class="navbar-brand d-flex justify-content-start " href="#">
-                    <span>
-                        <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
-                    </span>
-
-                    <div class="navbar_content text-center">
-                        <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
-                        <p class="text-white fw-bolder ">Vision to your Future</p>
-                    </div>
-                </a>
-                <p>Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
-                    tempufddfel. Lorem
-                    ipsum dolor sit amet Semper at elit team advisors.</p>
-                <ul>
-                    <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer_contact">
-                <h3>CONTACT INFO</h3>
-                <ul>
-                    <li>
-                        <p>Address : Corp Vision, 343 marketing, #21 cravel 1st lane street, NY - 62617.</p>
-                    </li>
-                    <li>
-                        <p>Phone Number :<a href="">+1(21) 234 4567</a></p>
-                    </li>
-                    <li>
-                        <p>Email :<a class="active" href=""> info@example.com</a></p>
-                    </li>
-                    <li>
-                        <p>Support :<a class="active" href=""> info@support.com</a></p>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer_categories">
-                <h3>CATEGORIES</h3>
-                <ul>
-                    <li><a href="">Marketing Strategy</a></li>
-                    <li><a href="">Startup Business</a></li>
-                    <li><a href="">Web development</a></li>
-                </ul>
-            </div>
-            <div class="footer_meta">
-                <h3>META</h3>
-                <ul>
-                    <li><a href="">Log in</a></li>
-                    <li><a href="">Entries feed</a></li>
-                    <li><a href="">Comments feed</a></li>
-                    <li><a href="">WordPress.org</a></li>
-                </ul>
-            </div>
+          <div class="footer_crop">
+            <a class="navbar-brand d-flex justify-content-start" href="#">
+              <span>
+                <i class="fs-3 fa fa-align-right text-success mt-2 me-1"></i>
+              </span>
+  
+              <div class="navbar_content text-center">
+                <h2 class="fs-3 fw-bolder text-white mb-0 mt-1">Crop Vision</h2>
+                <p class="text-white fw-bolder">Vision to your Future</p>
+              </div>
+            </a>
+            <p>
+              Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices
+              in ligula. Semper at tempufddfel. Lorem ipsum dolor sit amet Semper
+              at elit team advisors.
+            </p>
+            <ul>
+              <li>
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_contact">
+            <h3>CONTACT INFO</h3>
+            <ul>
+              <li>
+                <p>
+                  Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+                  street, NY - 62617.
+                </p>
+              </li>
+              <li>
+                <p>Phone Number :<a href="">+1(21) 234 4567</a></p>
+              </li>
+              <li>
+                <p>Email :<a class="active" href=""> info@example.com</a></p>
+              </li>
+              <li>
+                <p>Support :<a class="active" href=""> info@support.com</a></p>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_categories">
+            <h3>CATEGORIES</h3>
+            <ul>
+              <li><a href="">Marketing Strategy</a></li>
+              <li><a href="">Startup Business</a></li>
+              <li><a href="">Web development</a></li>
+            </ul>
+          </div>
+          <div class="footer_meta">
+            <h3>META</h3>
+            <ul>
+              <li><a href="">Log in</a></li>
+              <li><a href="">Entries feed</a></li>
+              <li><a href="">Comments feed</a></li>
+              <li><a href="">WordPress.org</a></li>
+            </ul>
+          </div>
         </div>
         <div class="footer_tilte">
-            <p>© 2022 Corp Vision All Rights Reserved</p>
-            <div class="footer_title_shape"></div>
-            <p>WordPress Theme by <span>W3Layouts.</span></p>
+          <p>© 2022 Corp Vision All Rights Reserved</p>
+          <div class="footer_title_shape"></div>
+          <p>WordPress Theme by <span>W3Layouts.</span></p>
         </div>
+        <button id="top" style="display: block" onclick=" topFunction()">
+          <span class="fa fa-angle-up"></span>
+        </button>
+  
+        <div class="sidebar">
+          <button
+            id="sidebar_btn"
+            onclick="sidebar()"
+            class="btn"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling"
+            aria-controls="offcanvasScrolling"
+          >
+            <i class="fa fa-angle-double-left"></i>
+          </button>
+  
+          <div
+            class="offcanvas offcanvas-end"
+            data-bs-scroll="true"
+            data-bs-backdrop="false"
+            tabindex="-1"
+            id="offcanvasScrolling"
+            aria-labelledby="offcanvasScrollingLabel"
+          >
+            <div class="offcanvas-header">
+              <ul>
+                <li>
+                  <a href=""
+                    ><i class="fa fa-arrow-left"></i> <span>Back</span></a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa fa-download"></i><span>Download</span></a
+                  >
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="fa fa-shopping-cart"></i><span>Buy</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <script src="../../js/home.js"></script>
+      <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
 
-    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
 </body>
 
 </html>
