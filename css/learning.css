@@ -594,7 +594,7 @@
   }
   /* Stats*/
   .stats {
-    background-color: #f8f9fa;
+    background-color: var(--bg-color);
     padding: 100px 0;
   }
   .stats .item .content {
