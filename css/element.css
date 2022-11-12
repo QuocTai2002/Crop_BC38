@@ -2,6 +2,9 @@
   box-sizing: border-box;
   margin: 0;
 }
+body{
+  background-color: var(--bg-color);
+}
 :root {
   --pramry-color: white;
   --text-seconde-color: #3f3a64;
@@ -47,13 +50,16 @@ header .container-fluid {
   opacity: 0.8;
 }
 .mt-27 {
-  margin-bottom: 27px;
+  margin-bottom: 30px;
 }
 .mr-20px {
   margin-right: 25px;
 }
 .mt-50px {
   margin-top: 50px;
+}
+.mb-50px{
+  margin-bottom: 50px;
 }
 .code {
   background-color: #f7f7f7;
@@ -152,6 +158,7 @@ header button.dark_more {
 /* Jumbotron */
 .jumbotron {
   padding-top: 3rem !important;
+
 }
 .jumbotron h2 {
   text-transform: capitalize;
